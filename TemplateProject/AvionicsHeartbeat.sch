@@ -17,23 +17,25 @@ $EndDescr
 $Comp
 L boringlib:74HC21 U1
 U 1 1 5F953590
-P 3350 3150
-F 0 "U1" H 3350 3525 50  0000 C CNN
-F 1 "74HC21" H 3350 3434 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 3150 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3350 3150 50  0001 C CNN
-	1    3350 3150
+P 3200 3150
+F 0 "U1" H 3200 3525 50  0000 C CNN
+F 1 "74HC21" H 3200 3434 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3150 50  0001 C CNN
+F 4 "296-31574-1-ND" H 3200 3150 50  0001 C CNN "Digikey"
+	1    3200 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L boringlib:74HC21 U1
 U 2 1 5F9550C5
-P 3350 3800
-F 0 "U1" H 3350 4175 50  0000 C CNN
-F 1 "74HC21" H 3350 4084 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 3800 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3350 3800 50  0001 C CNN
-	2    3350 3800
+P 3200 3800
+F 0 "U1" H 3200 4175 50  0000 C CNN
+F 1 "74HC21" H 3200 4084 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3800 50  0001 C CNN
+F 4 "296-31574-1-ND" H 3200 3800 50  0001 C CNN "Digikey"
+	2    3200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -44,39 +46,40 @@ F 0 "U1" H 1130 1396 50  0000 L CNN
 F 1 "74HC21" H 1130 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 900 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 900 1350 50  0001 C CNN
+F 4 "296-31574-1-ND" H 900 1350 50  0001 C CNN "Digikey"
 	3    900  1350
 	1    0    0    -1  
 $EndComp
-Text HLabel 2950 3000 0    50   Input ~ 0
+Text HLabel 2800 3000 0    50   Input ~ 0
 HEARTBEAT_INPUT_1
-Text HLabel 2950 3100 0    50   Input ~ 0
+Text HLabel 2800 3100 0    50   Input ~ 0
 HEARTBEAT_INPUT_2
-Text HLabel 2950 3200 0    50   Input ~ 0
+Text HLabel 2800 3200 0    50   Input ~ 0
 HEARTBEAT_INPUT_3
-Text HLabel 2950 3300 0    50   Input ~ 0
+Text HLabel 2800 3300 0    50   Input ~ 0
 HEARTBEAT_INPUT_4
-Text HLabel 2950 3650 0    50   Input ~ 0
+Text HLabel 2800 3650 0    50   Input ~ 0
 HEARTBEAT_INPUT_5
-Text HLabel 2950 3750 0    50   Input ~ 0
+Text HLabel 2800 3750 0    50   Input ~ 0
 HEARTBEAT_INPUT_6
-Text HLabel 2950 3850 0    50   Input ~ 0
+Text HLabel 2800 3850 0    50   Input ~ 0
 HEARTBEAT_INPUT_7
 Wire Wire Line
-	2950 3000 3050 3000
+	2800 3000 2900 3000
 Wire Wire Line
-	3050 3100 2950 3100
+	2900 3100 2800 3100
 Wire Wire Line
-	2950 3200 3050 3200
+	2800 3200 2900 3200
 Wire Wire Line
-	3050 3300 2950 3300
+	2900 3300 2800 3300
 Wire Wire Line
-	2950 3650 3050 3650
+	2800 3650 2900 3650
 Wire Wire Line
-	3050 3750 2950 3750
+	2900 3750 2800 3750
 Wire Wire Line
-	2950 3850 3050 3850
+	2800 3850 2900 3850
 Wire Wire Line
-	3050 3950 3000 3950
+	2900 3950 2850 3950
 $Comp
 L boringlib:74HC266 U2
 U 5 1 5F96A885
@@ -85,6 +88,7 @@ F 0 "U2" H 1880 1396 50  0000 L CNN
 F 1 "74HC266" H 1880 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1650 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 1650 1350 50  0001 C CNN
+F 4 "296-31804-1-ND" H 1650 1350 50  0001 C CNN "Digikey"
 	5    1650 1350
 	1    0    0    -1  
 $EndComp
@@ -96,6 +100,7 @@ F 0 "U2" H 3350 5275 50  0000 C CNN
 F 1 "74HC266" H 3350 5184 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 4950 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 4950 50  0001 C CNN
+F 4 "296-31804-1-ND" H 3350 4950 50  0001 C CNN "Digikey"
 	1    3350 4950
 	1    0    0    -1  
 $EndComp
@@ -107,6 +112,7 @@ F 0 "U2" H 3350 5825 50  0000 C CNN
 F 1 "74HC266" H 3350 5734 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 5500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 5500 50  0001 C CNN
+F 4 "296-31804-1-ND" H 3350 5500 50  0001 C CNN "Digikey"
 	2    3350 5500
 	1    0    0    -1  
 $EndComp
@@ -118,6 +124,7 @@ F 0 "U2" H 3350 6375 50  0000 C CNN
 F 1 "74HC266" H 3350 6284 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6050 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6050 50  0001 C CNN
+F 4 "296-31804-1-ND" H 3350 6050 50  0001 C CNN "Digikey"
 	3    3350 6050
 	1    0    0    -1  
 $EndComp
@@ -129,6 +136,7 @@ F 0 "U2" H 3350 6925 50  0000 C CNN
 F 1 "74HC266" H 3350 6834 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6600 50  0001 C CNN
+F 4 "296-31804-1-ND" H 3350 6600 50  0001 C CNN "Digikey"
 	4    3350 6600
 	1    0    0    -1  
 $EndComp
@@ -354,6 +362,7 @@ F 0 "U4" H 4250 5475 50  0000 C CNN
 F 1 "74HC21" H 4250 5384 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 5100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 4250 5100 50  0001 C CNN
+F 4 "296-31574-1-ND" H 4250 5100 50  0001 C CNN "Digikey"
 	1    4250 5100
 	1    0    0    -1  
 $EndComp
@@ -377,29 +386,29 @@ Wire Wire Line
 	3900 6600 3900 5250
 Wire Wire Line
 	3900 5250 3950 5250
-Text Label 7850 3700 0    50   ~ 0
+Text Label 6550 4150 0    50   ~ 0
 HEARTBEAT_ADDRESS_1
 Wire Wire Line
-	7850 3700 8850 3700
-Text HLabel 8850 3700 2    50   Output ~ 0
+	6550 4150 7550 4150
+Text HLabel 7550 4150 2    50   Output ~ 0
 HEARTBEAT_ADDRESS_1
-Text Label 7850 3800 0    50   ~ 0
+Text Label 6550 4250 0    50   ~ 0
 HEARTBEAT_ADDRESS_2
 Wire Wire Line
-	7850 3800 8850 3800
-Text HLabel 8850 3800 2    50   Output ~ 0
+	6550 4250 7550 4250
+Text HLabel 7550 4250 2    50   Output ~ 0
 HEARTBEAT_ADDRESS_2
-Text Label 7850 3900 0    50   ~ 0
+Text Label 6550 4350 0    50   ~ 0
 HEARTBEAT_ADDRESS_3
 Wire Wire Line
-	7850 3900 8850 3900
-Text HLabel 8850 3900 2    50   Output ~ 0
+	6550 4350 7550 4350
+Text HLabel 7550 4350 2    50   Output ~ 0
 HEARTBEAT_ADDRESS_3
-Text Label 7850 4000 0    50   ~ 0
+Text Label 6550 4450 0    50   ~ 0
 HEARTBEAT_ADDRESS_4
 Wire Wire Line
-	7850 4000 8850 4000
-Text HLabel 8850 4000 2    50   Output ~ 0
+	6550 4450 7550 4450
+Text HLabel 7550 4450 2    50   Output ~ 0
 HEARTBEAT_ADDRESS_4
 $Comp
 L power:+5V #PWR02
@@ -432,12 +441,13 @@ $EndComp
 $Comp
 L boringlib:74HC08 U3
 U 1 1 5F9890B3
-P 4050 3250
-F 0 "U3" H 4050 3575 50  0000 C CNN
-F 1 "74HC08" H 4050 3484 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4050 3350 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 4050 3350 50  0001 C CNN
-	1    4050 3250
+P 3900 3250
+F 0 "U3" H 3900 3575 50  0000 C CNN
+F 1 "74HC08" H 3900 3484 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3900 3350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 3900 3350 50  0001 C CNN
+F 4 "296-14506-1-ND" H 3900 3250 50  0001 C CNN "Digikey"
+	1    3900 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -448,6 +458,7 @@ F 0 "U3" H 5000 3675 50  0000 C CNN
 F 1 "74HC08" H 5000 3584 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 3450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 5000 3450 50  0001 C CNN
+F 4 "296-14506-1-ND" H 5000 3350 50  0001 C CNN "Digikey"
 	2    5000 3350
 	1    0    0    -1  
 $EndComp
@@ -459,6 +470,7 @@ F 0 "U3" H 2680 1396 50  0000 L CNN
 F 1 "74HC08" H 2680 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 1450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 2450 1450 50  0001 C CNN
+F 4 "296-14506-1-ND" H 2450 1350 50  0001 C CNN "Digikey"
 	5    2450 1350
 	1    0    0    -1  
 $EndComp
@@ -467,15 +479,15 @@ Wire Wire Line
 Wire Wire Line
 	2450 1900 2450 1850
 Wire Wire Line
-	3650 3150 3750 3150
+	3500 3150 3600 3150
 Wire Wire Line
-	3650 3800 3700 3800
+	3500 3800 3550 3800
 Wire Wire Line
-	3700 3800 3700 3350
+	3550 3800 3550 3350
 Wire Wire Line
-	3700 3350 3750 3350
+	3550 3350 3600 3350
 Wire Wire Line
-	4350 3250 4700 3250
+	4200 3250 4250 3250
 Wire Wire Line
 	4650 5100 4650 3450
 Wire Wire Line
@@ -715,6 +727,7 @@ F 0 "U4" H 3430 1396 50  0000 L CNN
 F 1 "74HC21" H 3430 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 1350 50  0001 C CNN
+F 4 "296-31574-1-ND" H 3200 1350 50  0001 C CNN "Digikey"
 	3    3200 1350
 	1    0    0    -1  
 $EndComp
@@ -726,8 +739,9 @@ U 1 1 5FA25AEE
 P 4750 1400
 F 0 "C1" H 4865 1446 50  0000 L CNN
 F 1 "0.1uF" H 4865 1355 50  0000 L CNN
-F 2 "" H 4788 1250 50  0001 C CNN
-F 3 "~" H 4750 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4788 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4750 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 4750 1400 50  0001 C CNN "Digikey"
 	1    4750 1400
 	1    0    0    -1  
 $EndComp
@@ -835,39 +849,6 @@ F 3 "" H 6100 1650 50  0001 C CNN
 	1    6100 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C2
-U 1 1 5FA3E54B
-P 5200 1400
-F 0 "C2" H 5315 1446 50  0000 L CNN
-F 1 "0.1uF" H 5315 1355 50  0000 L CNN
-F 2 "" H 5238 1250 50  0001 C CNN
-F 3 "~" H 5200 1400 50  0001 C CNN
-	1    5200 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5FA3E9B0
-P 5650 1400
-F 0 "C3" H 5765 1446 50  0000 L CNN
-F 1 "0.1uF" H 5765 1355 50  0000 L CNN
-F 2 "" H 5688 1250 50  0001 C CNN
-F 3 "~" H 5650 1400 50  0001 C CNN
-	1    5650 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5FA3EE38
-P 6100 1400
-F 0 "C4" H 6215 1446 50  0000 L CNN
-F 1 "0.1uF" H 6215 1355 50  0000 L CNN
-F 2 "" H 6138 1250 50  0001 C CNN
-F 3 "~" H 6100 1400 50  0001 C CNN
-	1    6100 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	900  800  900  850 
 Wire Wire Line
@@ -965,17 +946,6 @@ F 3 "" H 7450 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
-U 1 1 5FA4F306
-P 7000 1400
-F 0 "C6" H 7115 1446 50  0000 L CNN
-F 1 "0.1uF" H 7115 1355 50  0000 L CNN
-F 2 "" H 7038 1250 50  0001 C CNN
-F 3 "~" H 7000 1400 50  0001 C CNN
-	1    7000 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5FA53C14
 P 7450 1400
@@ -1018,7 +988,7 @@ F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%
 $EndComp
 Wire Wire Line
 	8800 3350 8850 3350
-Text HLabel 8850 3350 2    50   Output ~ 0
+Text HLabel 8900 3350 2    50   Output ~ 0
 HEARTBEAT
 $Comp
 L boringlib:74LVC1G17 U5
@@ -1083,17 +1053,6 @@ F 3 "" H 6550 1650 50  0001 C CNN
 	1    6550 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C5
-U 1 1 5FAC7809
-P 6550 1400
-F 0 "C5" H 6665 1446 50  0000 L CNN
-F 1 "0.1uF" H 6665 1355 50  0000 L CNN
-F 2 "" H 6588 1250 50  0001 C CNN
-F 3 "~" H 6550 1400 50  0001 C CNN
-	1    6550 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7550 3350 8200 3350
 $Comp
@@ -1138,28 +1097,172 @@ F 3 "" H 7200 2350 50  0001 C CNN
 	1    7200 2350
 	1    0    0    -1  
 $EndComp
-Text Label 2400 4350 0    50   ~ 0
+Text Label 2250 4350 0    50   ~ 0
 HEARTBEAT
 Wire Wire Line
-	2400 4350 3000 4350
+	2250 4350 2850 4350
 Wire Wire Line
-	3000 4350 3000 4300
+	2850 4350 2850 4300
 $Comp
-L Device:R_US R?
+L Device:R_US R15
 U 1 1 5FA50319
-P 3000 4150
-F 0 "R?" H 3068 4196 50  0000 L CNN
-F 1 "47K" H 3068 4105 50  0000 L CNN
-F 2 "" V 3040 4140 50  0001 C CNN
-F 3 "~" H 3000 4150 50  0001 C CNN
-	1    3000 4150
+P 2850 4150
+F 0 "R15" H 2918 4196 50  0000 L CNN
+F 1 "47K" H 2918 4105 50  0000 L CNN
+F 2 "" V 2890 4140 50  0001 C CNN
+F 3 "~" H 2850 4150 50  0001 C CNN
+	1    2850 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 3950 3000 4000
+	2850 3950 2850 4000
 Wire Wire Line
-	3000 3950 2950 3950
-Connection ~ 3000 3950
-Text HLabel 2950 3950 0    50   Input ~ 0
+	2850 3950 2800 3950
+Connection ~ 2850 3950
+Text HLabel 2800 3950 0    50   Input ~ 0
 HEARTBEAT_RESTART
+$Comp
+L Device:LED D2
+U 1 1 5FA69341
+P 4250 3450
+F 0 "D2" V 4289 3332 50  0000 R CNN
+F 1 "GREEN" V 4198 3332 50  0000 R CNN
+F 2 "" H 4250 3450 50  0001 C CNN
+F 3 "~" H 4250 3450 50  0001 C CNN
+	1    4250 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 3300 4250 3250
+Connection ~ 4250 3250
+Wire Wire Line
+	4250 3250 4700 3250
+Wire Wire Line
+	4250 3600 4250 3650
+$Comp
+L Device:R_US R16
+U 1 1 5FA785E3
+P 4250 3800
+F 0 "R16" H 4318 3846 50  0000 L CNN
+F 1 "1.5K" H 4318 3755 50  0000 L CNN
+F 2 "" V 4290 3790 50  0001 C CNN
+F 3 "~" H 4250 3800 50  0001 C CNN
+	1    4250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5FA792B1
+P 4250 4000
+F 0 "#PWR037" H 4250 3750 50  0001 C CNN
+F 1 "GND" H 4255 3827 50  0000 C CNN
+F 2 "" H 4250 4000 50  0001 C CNN
+F 3 "" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3950 4250 4000
+$Comp
+L Device:LED D3
+U 1 1 5FA80F3F
+P 8850 3500
+F 0 "D3" V 8889 3383 50  0000 R CNN
+F 1 "BLUE" V 8798 3383 50  0000 R CNN
+F 2 "" H 8850 3500 50  0001 C CNN
+F 3 "~" H 8850 3500 50  0001 C CNN
+	1    8850 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 3650 8850 3700
+$Comp
+L Device:R_US R17
+U 1 1 5FA80F4A
+P 8850 3850
+F 0 "R17" H 8918 3896 50  0000 L CNN
+F 1 "1.5K" H 8918 3805 50  0000 L CNN
+F 2 "" V 8890 3840 50  0001 C CNN
+F 3 "~" H 8850 3850 50  0001 C CNN
+	1    8850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5FA80F54
+P 8850 4050
+F 0 "#PWR038" H 8850 3800 50  0001 C CNN
+F 1 "GND" H 8855 3877 50  0000 C CNN
+F 2 "" H 8850 4050 50  0001 C CNN
+F 3 "" H 8850 4050 50  0001 C CNN
+	1    8850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4000 8850 4050
+Connection ~ 8850 3350
+Wire Wire Line
+	8850 3350 8900 3350
+Text Notes 1800 7100 0    50   ~ 0
+Use stuffing options to select\nboard heartbeat address
+$Comp
+L Device:C C2
+U 1 1 5FAA71AD
+P 5200 1400
+F 0 "C2" H 5315 1446 50  0000 L CNN
+F 1 "0.1uF" H 5315 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5238 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5200 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 5200 1400 50  0001 C CNN "Digikey"
+	1    5200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FAA751A
+P 5650 1400
+F 0 "C3" H 5765 1446 50  0000 L CNN
+F 1 "0.1uF" H 5765 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5650 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 5650 1400 50  0001 C CNN "Digikey"
+	1    5650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FAA7839
+P 6100 1400
+F 0 "C4" H 6215 1446 50  0000 L CNN
+F 1 "0.1uF" H 6215 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6100 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 6100 1400 50  0001 C CNN "Digikey"
+	1    6100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5FAA7BFA
+P 6550 1400
+F 0 "C5" H 6665 1446 50  0000 L CNN
+F 1 "0.1uF" H 6665 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6550 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 6550 1400 50  0001 C CNN "Digikey"
+	1    6550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5FAA8147
+P 7000 1400
+F 0 "C6" H 7115 1446 50  0000 L CNN
+F 1 "0.1uF" H 7115 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7000 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 7000 1400 50  0001 C CNN "Digikey"
+	1    7000 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
