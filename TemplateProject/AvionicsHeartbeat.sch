@@ -615,6 +615,7 @@ F 0 "U6" H 5850 3600 50  0000 L CNN
 F 1 "LTC6993xS6-1" H 6150 3600 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6100 2950 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/69931234fc.pdf" H 6150 3450 50  0001 C CNN
+F 4 "LTC6993CS6-1#TRMPBFCT-ND" H 6100 3350 50  0001 C CNN "Digikey"
 	1    6100 3350
 	1    0    0    -1  
 $EndComp
@@ -660,22 +661,11 @@ F 3 "" H 7550 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_GDS Q2
-U 1 1 5F9F8BCA
-P 7450 3100
-F 0 "Q2" H 7656 3146 50  0000 L CNN
-F 1 "Q_PMOS_GDS" H 7656 3055 50  0000 L CNN
-F 2 "" H 7650 3200 50  0001 C CNN
-F 3 "~" H 7450 3100 50  0001 C CNN
-	1    7450 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R12
 U 1 1 5F9FA332
 P 6900 2900
 F 0 "R12" H 6968 2946 50  0000 L CNN
-F 1 "10K" H 6968 2855 50  0000 L CNN
+F 1 "47K" H 6968 2855 50  0000 L CNN
 F 2 "" V 6940 2890 50  0001 C CNN
 F 3 "~" H 6900 2900 50  0001 C CNN
 	1    6900 2900
@@ -683,8 +673,6 @@ F 3 "~" H 6900 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 3050 6900 3100
-Wire Wire Line
-	6900 3100 7200 3100
 Wire Wire Line
 	6900 2750 6900 2700
 $Comp
@@ -703,9 +691,10 @@ L Device:Q_NMOS_GDS Q1
 U 1 1 5FA03BC6
 P 6800 3350
 F 0 "Q1" H 7006 3396 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 7006 3305 50  0000 L CNN
-F 2 "" H 7000 3450 50  0001 C CNN
-F 3 "~" H 6800 3350 50  0001 C CNN
+F 1 "DMG2302UK-7" H 7006 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7000 3450 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMG2302UK.pdf" H 6800 3350 50  0001 C CNN
+F 4 "DMG2302UK-7DICT-ND" H 6800 3350 50  0001 C CNN "Digikey"
 	1    6800 3350
 	1    0    0    -1  
 $EndComp
@@ -982,13 +971,14 @@ P 8500 3350
 F 0 "U5" H 8500 3667 50  0000 C CNN
 F 1 "74LVC1G17" H 8500 3576 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 8500 3350 50  0001 C CNN
-F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g17" H 8500 3350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1605119972692" H 8500 3350 50  0001 C CNN
+F 4 "296-11933-1-ND" H 8500 3350 50  0001 C CNN "Digikey"
 	1    8500 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8800 3350 8850 3350
-Text HLabel 8900 3350 2    50   Output ~ 0
+Text HLabel 9000 3350 2    50   Output ~ 0
 HEARTBEAT
 $Comp
 L boringlib:74LVC1G17 U5
@@ -997,7 +987,7 @@ P 3950 1350
 F 0 "U5" H 4180 1396 50  0000 L CNN
 F 1 "74LVC1G17" H 4180 1305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3950 1350 50  0001 C CNN
-F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g17" H 3950 1350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1605119972692" H 3950 1350 50  0001 C CNN
 	2    3950 1350
 	1    0    0    -1  
 $EndComp
@@ -1055,48 +1045,6 @@ F 3 "" H 6550 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 3350 8200 3350
-$Comp
-L Device:LED D1
-U 1 1 5FADE251
-P 7200 2900
-F 0 "D1" V 7239 2783 50  0000 R CNN
-F 1 "LED" V 7148 2783 50  0000 R CNN
-F 2 "" H 7200 2900 50  0001 C CNN
-F 3 "~" H 7200 2900 50  0001 C CNN
-	1    7200 2900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7200 3050 7200 3100
-Connection ~ 7200 3100
-Wire Wire Line
-	7200 3100 7250 3100
-$Comp
-L Device:R_US R13
-U 1 1 5FAE6631
-P 7200 2550
-F 0 "R13" H 7268 2596 50  0000 L CNN
-F 1 "2.2K" H 7268 2505 50  0000 L CNN
-F 2 "" V 7240 2540 50  0001 C CNN
-F 3 "~" H 7200 2550 50  0001 C CNN
-	1    7200 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 2700 7200 2750
-Wire Wire Line
-	7200 2400 7200 2350
-$Comp
-L power:+5V #PWR030
-U 1 1 5FAEDB0A
-P 7200 2350
-F 0 "#PWR030" H 7200 2200 50  0001 C CNN
-F 1 "+5V" H 7200 2500 50  0000 C CNN
-F 2 "" H 7200 2350 50  0001 C CNN
-F 3 "" H 7200 2350 50  0001 C CNN
-	1    7200 2350
-	1    0    0    -1  
-$EndComp
 Text Label 2250 4350 0    50   ~ 0
 HEARTBEAT
 Wire Wire Line
@@ -1127,8 +1075,9 @@ U 1 1 5FA69341
 P 4250 3450
 F 0 "D2" V 4289 3332 50  0000 R CNN
 F 1 "GREEN" V 4198 3332 50  0000 R CNN
-F 2 "" H 4250 3450 50  0001 C CNN
-F 3 "~" H 4250 3450 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 3450 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080GS75000.pdf" H 4250 3450 50  0001 C CNN
+F 4 "732-4983-1-ND" V 4250 3450 50  0001 C CNN "Digikey"
 	1    4250 3450
 	0    -1   -1   0   
 $EndComp
@@ -1144,7 +1093,7 @@ L Device:R_US R16
 U 1 1 5FA785E3
 P 4250 3800
 F 0 "R16" H 4318 3846 50  0000 L CNN
-F 1 "1.5K" H 4318 3755 50  0000 L CNN
+F 1 "1K" H 4318 3755 50  0000 L CNN
 F 2 "" V 4290 3790 50  0001 C CNN
 F 3 "~" H 4250 3800 50  0001 C CNN
 	1    4250 3800
@@ -1169,8 +1118,9 @@ U 1 1 5FA80F3F
 P 8850 3500
 F 0 "D3" V 8889 3383 50  0000 R CNN
 F 1 "BLUE" V 8798 3383 50  0000 R CNN
-F 2 "" H 8850 3500 50  0001 C CNN
-F 3 "~" H 8850 3500 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8850 3500 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080BS75000.pdf" H 8850 3500 50  0001 C CNN
+F 4 "732-4982-1-ND" V 8850 3500 50  0001 C CNN "Digikey"
 	1    8850 3500
 	0    -1   -1   0   
 $EndComp
@@ -1181,7 +1131,7 @@ L Device:R_US R17
 U 1 1 5FA80F4A
 P 8850 3850
 F 0 "R17" H 8918 3896 50  0000 L CNN
-F 1 "1.5K" H 8918 3805 50  0000 L CNN
+F 1 "1K" H 8918 3805 50  0000 L CNN
 F 2 "" V 8890 3840 50  0001 C CNN
 F 3 "~" H 8850 3850 50  0001 C CNN
 	1    8850 3850
@@ -1202,7 +1152,7 @@ Wire Wire Line
 	8850 4000 8850 4050
 Connection ~ 8850 3350
 Wire Wire Line
-	8850 3350 8900 3350
+	8850 3350 9000 3350
 Text Notes 1800 7100 0    50   ~ 0
 Use stuffing options to select\nboard heartbeat address
 $Comp
@@ -1265,4 +1215,18 @@ F 4 "311-1341-1-ND" H 7000 1400 50  0001 C CNN "Digikey"
 	1    7000 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Q_PMOS_GDS Q2
+U 1 1 5F9F8BCA
+P 7450 3100
+F 0 "Q2" H 7656 3146 50  0000 L CNN
+F 1 "DMP2123L-7" H 7656 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7650 3200 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31440.pdf" H 7450 3100 50  0001 C CNN
+F 4 "DMP2123LDICT-ND" H 7450 3100 50  0001 C CNN "Digikey"
+	1    7450 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6900 3100 7250 3100
 $EndSCHEMATC
