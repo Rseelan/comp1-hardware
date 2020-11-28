@@ -1,6 +1,21 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# R-78C5.0-1.0-boringlib
+#
+DEF R-78C5.0-1.0-boringlib VR 0 40 Y Y 1 F N
+F0 "VR" 200 -300 50 H V C CNN
+F1 "R-78C5.0-1.0-boringlib" 0 200 50 H V C CNN
+F2 "" 200 -300 50 H I C CNN
+F3 "" 200 -300 50 H I C CNN
+DRAW
+S -300 150 300 -250 0 1 0 f
+X +VIN 1 -400 0 100 R 50 50 1 1 I
+X +VOUT 2 400 0 100 L 50 50 1 1 O
+X GND 3 0 -350 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # TemplateProject-rescue_LED-Device-TemplateProject-cache
 #
 DEF TemplateProject-rescue_LED-Device-TemplateProject-cache D 0 40 N N 1 F N
