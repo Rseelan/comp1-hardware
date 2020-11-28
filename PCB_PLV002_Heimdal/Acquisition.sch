@@ -1,0 +1,174 @@
+EESchema Schematic File Version 4
+LIBS:PCB_PLV002_Heimdal-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Heimdal Sensor Interface Board"
+Date ""
+Rev "A"
+Comp ""
+Comment1 "JKR"
+Comment2 "PLV007"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5FBE11A3
+P 1250 1000
+F 0 "J2" H 1400 950 50  0000 C CNN
+F 1 "ANALOG_IN_1" H 1600 1050 50  0000 C CNN
+F 2 "" H 1250 1000 50  0001 C CNN
+F 3 "~" H 1250 1000 50  0001 C CNN
+	1    1250 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5FBE233C
+P 1500 1150
+F 0 "#PWR0111" H 1500 900 50  0001 C CNN
+F 1 "GND" H 1505 977 50  0000 C CNN
+F 2 "" H 1500 1150 50  0001 C CNN
+F 3 "" H 1500 1150 50  0001 C CNN
+	1    1500 1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1150 1500 1100
+Wire Wire Line
+	1500 1100 1450 1100
+$Comp
+L power:+24V #PWR0112
+U 1 1 5FBE335E
+P 1500 850
+F 0 "#PWR0112" H 1500 700 50  0001 C CNN
+F 1 "+24V" H 1515 1023 50  0000 C CNN
+F 2 "" H 1500 850 50  0001 C CNN
+F 3 "" H 1500 850 50  0001 C CNN
+	1    1500 850 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 850  1500 900 
+Wire Wire Line
+	1500 900  1450 900 
+Text Label 1900 1000 2    50   ~ 0
+VOLTAGE_IN
+Wire Wire Line
+	1950 1000 1450 1000
+$Comp
+L Amplifier_Operational:LM2902 U8
+U 1 1 5FBE7CD2
+P 2650 1500
+F 0 "U8" H 2650 1867 50  0000 C CNN
+F 1 "LM2902" H 2650 1776 50  0000 C CNN
+F 2 "" H 2600 1600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2700 1700 50  0001 C CNN
+	1    2650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1600 2300 1600
+Wire Wire Line
+	2300 1600 2300 1750
+Wire Wire Line
+	2300 1750 3000 1750
+Wire Wire Line
+	3000 1750 3000 1500
+Wire Wire Line
+	3000 1500 2950 1500
+$Comp
+L Device:R_US R18
+U 1 1 5FBF3F08
+P 1950 1200
+F 0 "R18" H 2018 1246 50  0000 L CNN
+F 1 "100K" H 2018 1155 50  0000 L CNN
+F 2 "" V 1990 1190 50  0001 C CNN
+F 3 "~" H 1950 1200 50  0001 C CNN
+	1    1950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1050 1950 1000
+$Comp
+L Device:R_US R19
+U 1 1 5FBF4EF5
+P 1950 1600
+F 0 "R19" H 2018 1646 50  0000 L CNN
+F 1 "15.9K" H 2018 1555 50  0000 L CNN
+F 2 "" V 1990 1590 50  0001 C CNN
+F 3 "~" H 1950 1600 50  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1350 1950 1400
+Wire Wire Line
+	1950 1750 1950 1800
+$Comp
+L power:GND #PWR0113
+U 1 1 5FBF5A1A
+P 1950 1800
+F 0 "#PWR0113" H 1950 1550 50  0001 C CNN
+F 1 "GND" H 1955 1627 50  0000 C CNN
+F 2 "" H 1950 1800 50  0001 C CNN
+F 3 "" H 1950 1800 50  0001 C CNN
+	1    1950 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1400 1950 1400
+Connection ~ 1950 1400
+Wire Wire Line
+	1950 1400 1950 1450
+$Comp
+L Device:R_US R20
+U 1 1 5FBF7B76
+P 3200 1500
+F 0 "R20" V 2995 1500 50  0000 C CNN
+F 1 "1K" V 3086 1500 50  0000 C CNN
+F 2 "" V 3240 1490 50  0001 C CNN
+F 3 "~" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 1500 3000 1500
+Connection ~ 3000 1500
+$Comp
+L Device:C C9
+U 1 1 5FBF86CA
+P 3400 1700
+F 0 "C9" H 3515 1746 50  0000 L CNN
+F 1 "0.1uF" H 3515 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 1550 50  0001 C CNN
+F 3 "~" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1500 3400 1500
+Wire Wire Line
+	3400 1500 3400 1550
+Wire Wire Line
+	3400 1500 3450 1500
+Connection ~ 3400 1500
+Wire Wire Line
+	3400 1850 3400 1900
+$Comp
+L power:GND #PWR0114
+U 1 1 5FBF9C46
+P 3400 1900
+F 0 "#PWR0114" H 3400 1650 50  0001 C CNN
+F 1 "GND" H 3405 1727 50  0000 C CNN
+F 2 "" H 3400 1900 50  0001 C CNN
+F 3 "" H 3400 1900 50  0001 C CNN
+	1    3400 1900
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3450 1500 2    50   Output ~ 0
+ANALOG_IN_1
+$EndSCHEMATC

@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
+LIBS:PCB_PLV002_Heimdal-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
-Title ""
+Sheet 2 3
+Title "Heimdal Sensor Interface Board"
 Date ""
 Rev "A"
 Comp ""
