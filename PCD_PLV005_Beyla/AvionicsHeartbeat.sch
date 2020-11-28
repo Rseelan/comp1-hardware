@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:PCB_PLV005_Beyla-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,18 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L boringlib:74HC21 U1
-U 3 1 5F956B40
-P 900 1350
-F 0 "U1" H 1130 1396 50  0000 L CNN
-F 1 "74HC21" H 1130 1305 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 900 1350 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 900 1350 50  0001 C CNN
-F 4 "296-31574-1-ND" H 900 1350 50  0001 C CNN "Digikey"
-	3    900  1350
-	1    0    0    -1  
-$EndComp
 Text HLabel 3800 3250 0    50   Input ~ 0
 HEARTBEAT_INPUT_1
 $Comp
@@ -327,21 +316,8 @@ Wire Wire Line
 	3900 5250 3950 5250
 Text HLabel 3000 4850 0    50   Input ~ 0
 HEARTBEAT_ADDRESS_1
-$Comp
-L TemplateProject-rescue:+5V-power #PWR02
-U 1 1 5F976DB6
-P 900 800
-F 0 "#PWR02" H 900 650 50  0001 C CNN
-F 1 "+5V" H 900 950 50  0000 C CNN
-F 2 "" H 900 800 50  0001 C CNN
-F 3 "" H 900 800 50  0001 C CNN
-	1    900  800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1650 800  1650 850 
-Wire Wire Line
-	900  1850 900  1900
 Wire Wire Line
 	1650 1900 1650 1850
 $Comp
@@ -359,6 +335,8 @@ $Comp
 L boringlib:74HC08 U3
 U 2 1 5F98DD9A
 P 5000 3350
+AR Path="/5F98DD9A" Ref="U3"  Part="2" 
+AR Path="/5F94F01A/5F98DD9A" Ref="U3"  Part="2" 
 F 0 "U3" H 5000 3675 50  0000 C CNN
 F 1 "74HC08" H 5000 3584 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 3450 50  0001 C CNN
@@ -371,6 +349,8 @@ $Comp
 L boringlib:74HC08 U3
 U 5 1 5F99254E
 P 2450 1350
+AR Path="/5F99254E" Ref="U3"  Part="5" 
+AR Path="/5F94F01A/5F99254E" Ref="U3"  Part="5" 
 F 0 "U3" H 2680 1396 50  0000 L CNN
 F 1 "74HC08" H 2680 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 1450 50  0001 C CNN
@@ -618,46 +598,6 @@ $EndComp
 Wire Wire Line
 	3200 800  3200 850 
 $Comp
-L TemplateProject-rescue:C-Device C1
-U 1 1 5FA25AEE
-P 4750 1400
-AR Path="/5FA25AEE" Ref="C1"  Part="1" 
-AR Path="/5F94F01A/5FA25AEE" Ref="C1"  Part="1" 
-F 0 "C1" H 4865 1446 50  0000 L CNN
-F 1 "0.1uF" H 4865 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4788 1250 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4750 1400 50  0001 C CNN
-F 4 "311-1341-1-ND" H 4750 1400 50  0001 C CNN "Digikey"
-	1    4750 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L TemplateProject-rescue:+5V-power #PWR019
-U 1 1 5FA27F8D
-P 4750 1150
-F 0 "#PWR019" H 4750 1000 50  0001 C CNN
-F 1 "+5V" H 4750 1300 50  0000 C CNN
-F 2 "" H 4750 1150 50  0001 C CNN
-F 3 "" H 4750 1150 50  0001 C CNN
-	1    4750 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 1150 4750 1250
-Wire Wire Line
-	4750 1550 4750 1650
-$Comp
-L TemplateProject-rescue:GND-power #PWR020
-U 1 1 5FA2DC38
-P 4750 1650
-F 0 "#PWR020" H 4750 1400 50  0001 C CNN
-F 1 "GND" H 4755 1477 50  0000 C CNN
-F 2 "" H 4750 1650 50  0001 C CNN
-F 3 "" H 4750 1650 50  0001 C CNN
-	1    4750 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L TemplateProject-rescue:+5V-power #PWR023
 U 1 1 5FA2FC36
 P 5200 1150
@@ -736,8 +676,6 @@ F 3 "" H 6100 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  800  900  850 
-Wire Wire Line
 	3200 1850 3200 1900
 $Comp
 L TemplateProject-rescue:GND-power #PWR011
@@ -759,17 +697,6 @@ F 1 "GND" H 1655 1727 50  0000 C CNN
 F 2 "" H 1650 1900 50  0001 C CNN
 F 3 "" H 1650 1900 50  0001 C CNN
 	1    1650 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TemplateProject-rescue:GND-power #PWR03
-U 1 1 5FA49297
-P 900 1900
-F 0 "#PWR03" H 900 1650 50  0001 C CNN
-F 1 "GND" H 905 1727 50  0000 C CNN
-F 2 "" H 900 1900 50  0001 C CNN
-F 3 "" H 900 1900 50  0001 C CNN
-	1    900  1900
 	1    0    0    -1  
 $EndComp
 $Comp

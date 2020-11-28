@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:PCB_PLV005_Beyla-cache
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -182,17 +183,6 @@ Wire Wire Line
 Connection ~ 4550 3600
 Wire Wire Line
 	4200 3000 4550 3000
-$Comp
-L boringlib:Recom_R-78c-1.0 VR1
-U 1 1 5FC17AF0
-P 5200 3000
-F 0 "VR1" H 5200 3315 50  0000 C CNN
-F 1 "Recom_R-78c-1.0" H 5200 3224 50  0000 C CNN
-F 2 "" H 5400 2700 50  0001 C CNN
-F 3 "https://d311uvhi8lkjbj.cloudfront.net/media/Datasheet/pdf/.f91HWzyW/.t321978fcd1ad139cbfa2/Datasheet-260/R-78C-1_0.pdf" H 5400 2700 50  0001 C CNN
-	1    5200 3000
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 7100 4650
 Wire Wire Line
 	4550 2950 4550 3000
@@ -252,4 +242,15 @@ Connection ~ 2800 4450
 Wire Wire Line
 	2900 4350 2800 4350
 Connection ~ 2800 4350
+$Comp
+L boringlib:Recom_R-78c-1.0 VR?
+U 1 1 5FC3D4E7
+P 5200 3000
+F 0 "VR?" H 5200 3315 50  0000 C CNN
+F 1 "Recom_R-78c-1.0" H 5200 3224 50  0000 C CNN
+F 2 "BoringFootprints:Recom_R-78c-1.0" H 5400 2700 50  0001 C CNN
+F 3 "" H 5400 2700 50  0001 C CNN
+	1    5200 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
