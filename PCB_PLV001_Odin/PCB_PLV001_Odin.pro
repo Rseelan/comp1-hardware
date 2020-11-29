@@ -1,4 +1,4 @@
-update=20/10/26 22:25:31
+update=20/11/29 01:38:23
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=C:/Users/Jasper Rubin/Desktop/Projects/Paradigm/Boring/git/boringlib/Paradigm_Boring_Kicad_Format.kicad_wks
-PlotDirectoryName=HeartbeatTransceiver
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
