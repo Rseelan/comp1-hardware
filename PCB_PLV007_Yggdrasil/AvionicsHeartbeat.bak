@@ -4,8 +4,8 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
-Title ""
+Sheet 2 3
+Title "Yggdrasil Surface Interface Board"
 Date ""
 Rev "A"
 Comp ""
@@ -410,20 +410,10 @@ F 3 "" H 3200 1900 50  0001 C CNN
 $EndComp
 $Comp
 L boringlib:74HC08 U3
-U 1 1 5F9890B3
-P 3900 3250
-F 0 "U3" H 3900 3575 50  0000 C CNN
-F 1 "74HC08" H 3900 3484 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3900 3350 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 3900 3350 50  0001 C CNN
-F 4 "296-14506-1-ND" H 3900 3250 50  0001 C CNN "Digikey"
-	1    3900 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC08 U3
 U 2 1 5F98DD9A
 P 5000 3350
+AR Path="/5F98DD9A" Ref="U3"  Part="2" 
+AR Path="/5F94F01A/5F98DD9A" Ref="U3"  Part="2" 
 F 0 "U3" H 5000 3675 50  0000 C CNN
 F 1 "74HC08" H 5000 3584 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 3450 50  0001 C CNN
@@ -436,6 +426,8 @@ $Comp
 L boringlib:74HC08 U3
 U 5 1 5F99254E
 P 2450 1350
+AR Path="/5F99254E" Ref="U3"  Part="5" 
+AR Path="/5F94F01A/5F99254E" Ref="U3"  Part="5" 
 F 0 "U3" H 2680 1396 50  0000 L CNN
 F 1 "74HC08" H 2680 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 1450 50  0001 C CNN
@@ -1212,4 +1204,18 @@ Wire Wire Line
 Connection ~ 8100 3350
 Wire Wire Line
 	8100 3350 8200 3350
+$Comp
+L boringlib:74HC08 U?
+U 1 1 5FC35096
+P 3900 3250
+AR Path="/5FC35096" Ref="U?"  Part="2" 
+AR Path="/5F94F01A/5FC35096" Ref="U3"  Part="1" 
+F 0 "U3" H 3900 3575 50  0000 C CNN
+F 1 "74HC08" H 3900 3484 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3900 3350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 3900 3350 50  0001 C CNN
+F 4 "296-14506-1-ND" H 3900 3250 50  0001 C CNN "Digikey"
+	1    3900 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
