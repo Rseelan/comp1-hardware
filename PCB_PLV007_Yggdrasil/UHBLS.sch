@@ -15,20 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Power_Management:BTS50055-1TMA U?
-U 1 1 5FC580B1
-P 6950 1950
-AR Path="/5FC580B1" Ref="U?"  Part="1" 
-AR Path="/5FC40E29/5FC580B1" Ref="U10"  Part="1" 
-F 0 "U10" H 6750 2200 50  0000 C CNN
-F 1 "BTS50055-1TMA" H 7300 2200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin4" H 7750 1700 50  0001 C CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BTS50055-1TMA-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa9b00de935ed" H 6950 1550 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/infineon-technologies/BTS500551TMAATMA1/2080769" H 6950 1950 50  0001 C CNN "Digikey"
-	1    6950 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NPN_BCE Q?
 U 1 1 5FC580B7
 P 4450 2200
@@ -99,7 +85,7 @@ P 6600 2400
 AR Path="/5FC580D6" Ref="#PWR?"  Part="1" 
 AR Path="/5FC40E29/5FC580D6" Ref="#PWR0129"  Part="1" 
 F 0 "#PWR0129" H 6600 2150 50  0001 C CNN
-F 1 "GND" H 6600 2250 50  0000 C CNN
+F 1 "GND" H 6700 2400 50  0000 C CNN
 F 2 "" H 6600 2400 50  0001 C CNN
 F 3 "" H 6600 2400 50  0001 C CNN
 	1    6600 2400
@@ -238,7 +224,7 @@ P 8150 2200
 AR Path="/5FC5811B" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC5811B" Ref="R37"  Part="1" 
 F 0 "R37" H 8218 2246 50  0000 L CNN
-F 1 "1M" H 8218 2155 50  0000 L CNN
+F 1 "100K" H 8218 2155 50  0000 L CNN
 F 2 "" V 8190 2190 50  0001 C CNN
 F 3 "~" H 8150 2200 50  0001 C CNN
 	1    8150 2200
@@ -253,7 +239,7 @@ P 8150 2650
 AR Path="/5FC58122" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC58122" Ref="R38"  Part="1" 
 F 0 "R38" H 8218 2696 50  0000 L CNN
-F 1 "100K" H 8218 2605 50  0000 L CNN
+F 1 "10K" H 8218 2605 50  0000 L CNN
 F 2 "" V 8190 2640 50  0001 C CNN
 F 3 "~" H 8150 2650 50  0001 C CNN
 	1    8150 2650
@@ -529,8 +515,6 @@ F 3 "" H 6950 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6950 2550
-Wire Wire Line
-	6700 2550 6950 2550
 Text Label 6700 2550 0    50   ~ 0
 V_SENSE
 $Comp
@@ -627,7 +611,7 @@ P 2050 3600
 AR Path="/5FC581DC" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC581DC" Ref="R23"  Part="1" 
 F 0 "R23" H 2118 3646 50  0000 L CNN
-F 1 "160K" H 2118 3555 50  0000 L CNN
+F 1 "10K" H 2118 3555 50  0000 L CNN
 F 2 "" V 2090 3590 50  0001 C CNN
 F 3 "~" H 2050 3600 50  0001 C CNN
 	1    2050 3600
@@ -640,7 +624,7 @@ P 2050 4000
 AR Path="/5FC581E2" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC581E2" Ref="R24"  Part="1" 
 F 0 "R24" H 2118 4046 50  0000 L CNN
-F 1 "750K" H 2118 3955 50  0000 L CNN
+F 1 "43K" H 2118 3955 50  0000 L CNN
 F 2 "" V 2090 3990 50  0001 C CNN
 F 3 "~" H 2050 4000 50  0001 C CNN
 	1    2050 4000
@@ -649,7 +633,7 @@ $EndComp
 Wire Wire Line
 	2050 3750 2050 3800
 Wire Wire Line
-	2050 3800 2700 3800
+	2050 3800 2650 3800
 Connection ~ 2050 3800
 Wire Wire Line
 	2050 3800 2050 3850
@@ -729,9 +713,7 @@ F 3 "~" H 6200 5050 50  0001 C CNN
 	1    6200 5050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3300 3900 3600 3900
-Text Label 3600 3900 2    50   ~ 0
+Text Label 3700 3900 2    50   ~ 0
 V_SAFE
 $Comp
 L Amplifier_Operational:LM2902 U?
@@ -757,7 +739,7 @@ P 2050 4900
 AR Path="/5FC7C18E" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC7C18E" Ref="R25"  Part="1" 
 F 0 "R25" H 2118 4946 50  0000 L CNN
-F 1 "130K" H 2118 4855 50  0000 L CNN
+F 1 "10K" H 2118 4855 50  0000 L CNN
 F 2 "" V 2090 4890 50  0001 C CNN
 F 3 "~" H 2050 4900 50  0001 C CNN
 	1    2050 4900
@@ -770,7 +752,7 @@ P 2050 5300
 AR Path="/5FC7C198" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC7C198" Ref="R27"  Part="1" 
 F 0 "R27" H 2118 5346 50  0000 L CNN
-F 1 "200K" H 2118 5255 50  0000 L CNN
+F 1 "16K" H 2118 5255 50  0000 L CNN
 F 2 "" V 2090 5290 50  0001 C CNN
 F 3 "~" H 2050 5300 50  0001 C CNN
 	1    2050 5300
@@ -779,7 +761,7 @@ $EndComp
 Wire Wire Line
 	2050 5050 2050 5100
 Wire Wire Line
-	2050 5100 2700 5100
+	2050 5100 2650 5100
 Connection ~ 2050 5100
 Wire Wire Line
 	2050 5100 2050 5150
@@ -814,8 +796,8 @@ $EndComp
 Wire Wire Line
 	2050 4700 2050 4750
 Wire Wire Line
-	3300 5200 3600 5200
-Text Label 3600 5200 2    50   ~ 0
+	3300 5200 3400 5200
+Text Label 3700 5200 2    50   ~ 0
 C_SAFE
 Text Label 4700 4650 0    50   ~ 0
 V_SAFE
@@ -955,12 +937,10 @@ F 3 "" H 5100 2550 50  0001 C CNN
 	1    5100 2550
 	1    0    0    -1  
 $EndComp
-Text Notes 2350 5550 0    50   ~ 0
-2V reference, should trigger OCP arount 10A
-Text Notes 2350 4250 0    50   ~ 0
-2.7V reference, should trigger OVP around 30V
-Wire Wire Line
-	2350 4000 2700 4000
+Text Notes 2350 5600 0    50   ~ 0
+Should trigger OCP arount 10A\nHysteresis from 1.9V to 2.1V
+Text Notes 2350 4300 0    50   ~ 0
+Should trigger OVP around 30V\nHysteresis from 2.6V to 2.7V
 Text Label 2350 4000 0    50   ~ 0
 V_SENSE
 Text Label 2000 2850 0    50   ~ 0
@@ -977,4 +957,154 @@ Text HLabel 2400 2850 2    50   Output ~ 0
 V_SAFE
 Text HLabel 6550 1600 0    50   Input ~ 0
 VIN
+$Comp
+L Power_Management:BTS50055-1TMA U?
+U 1 1 5FC580B1
+P 6950 1950
+AR Path="/5FC580B1" Ref="U?"  Part="1" 
+AR Path="/5FC40E29/5FC580B1" Ref="U10"  Part="1" 
+F 0 "U10" H 6750 2200 50  0000 C CNN
+F 1 "BTS50055-1TMA" H 7300 2200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin4" H 7750 1700 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BTS50055-1TMA-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa9b00de935ed" H 6950 1550 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/infineon-technologies/BTS500551TMAATMA1/2080769" H 6950 1950 50  0001 C CNN "Digikey"
+	1    6950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D7
+U 1 1 5FCD0822
+P 6600 2750
+F 0 "D7" V 6554 2829 50  0000 L CNN
+F 1 "3.3V" V 6645 2829 50  0000 L CNN
+F 2 "" H 6600 2750 50  0001 C CNN
+F 3 "~" H 6600 2750 50  0001 C CNN
+	1    6600 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 2600 6600 2550
+Wire Wire Line
+	6600 2550 6950 2550
+Wire Wire Line
+	6600 2900 6600 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5FCD7E76
+P 6600 2950
+AR Path="/5FCD7E76" Ref="#PWR?"  Part="1" 
+AR Path="/5FC40E29/5FCD7E76" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 6600 2700 50  0001 C CNN
+F 1 "GND" H 6605 2777 50  0000 C CNN
+F 2 "" H 6600 2950 50  0001 C CNN
+F 3 "" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5FCE1509
+P 9200 2550
+F 0 "J3" H 9300 2450 50  0000 C CNN
+F 1 "UMBILICAL_POWER" H 9600 2550 50  0000 C CNN
+F 2 "" H 9200 2550 50  0001 C CNN
+F 3 "~" H 9200 2550 50  0001 C CNN
+	1    9200 2550
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCE6A93
+P 8950 2700
+AR Path="/5FCE6A93" Ref="#PWR?"  Part="1" 
+AR Path="/5FC40E29/5FCE6A93" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 8950 2450 50  0001 C CNN
+F 1 "GND" H 8955 2527 50  0000 C CNN
+F 2 "" H 8950 2700 50  0001 C CNN
+F 3 "" H 8950 2700 50  0001 C CNN
+	1    8950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2700 8950 2650
+Wire Wire Line
+	8950 2550 9000 2550
+Wire Wire Line
+	9000 2650 8950 2650
+Connection ~ 8950 2650
+Wire Wire Line
+	8950 2650 8950 2550
+Text Label 9450 2250 2    50   ~ 0
+UMBILICAL_V+
+Wire Wire Line
+	8950 2250 8950 2350
+Wire Wire Line
+	8950 2450 9000 2450
+Wire Wire Line
+	9000 2350 8950 2350
+Connection ~ 8950 2350
+Wire Wire Line
+	8950 2350 8950 2450
+Wire Wire Line
+	8950 2250 9450 2250
+Text Notes 4850 3000 0    50   ~ 0
+NOTE: Place these decoupling passives\nas close as possible to signal destination.
+$Comp
+L Device:R_US R?
+U 1 1 5FDF511E
+P 3000 3400
+AR Path="/5FDF511E" Ref="R?"  Part="1" 
+AR Path="/5FC40E29/5FDF511E" Ref="R?"  Part="1" 
+F 0 "R?" V 2950 3250 50  0000 C CNN
+F 1 "260K" V 2950 3550 50  0000 C CNN
+F 2 "" V 3040 3390 50  0001 C CNN
+F 3 "~" H 3000 3400 50  0001 C CNN
+	1    3000 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 4000 2700 4000
+Wire Wire Line
+	3300 3900 3400 3900
+Wire Wire Line
+	3400 3900 3400 3400
+Wire Wire Line
+	3400 3400 3150 3400
+Connection ~ 3400 3900
+Wire Wire Line
+	3400 3900 3700 3900
+Wire Wire Line
+	2850 3400 2650 3400
+Wire Wire Line
+	2650 3400 2650 3800
+Connection ~ 2650 3800
+Wire Wire Line
+	2650 3800 2700 3800
+$Comp
+L Device:R_US R?
+U 1 1 5FE1C417
+P 3000 4700
+AR Path="/5FE1C417" Ref="R?"  Part="1" 
+AR Path="/5FC40E29/5FE1C417" Ref="R?"  Part="1" 
+F 0 "R?" V 2950 4550 50  0000 C CNN
+F 1 "95K" V 2950 4850 50  0000 C CNN
+F 2 "" V 3040 4690 50  0001 C CNN
+F 3 "~" H 3000 4700 50  0001 C CNN
+	1    3000 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 5200 3400 4700
+Wire Wire Line
+	3400 4700 3150 4700
+Wire Wire Line
+	2850 4700 2650 4700
+Wire Wire Line
+	2650 4700 2650 5100
+Connection ~ 2650 5100
+Wire Wire Line
+	2650 5100 2700 5100
+Connection ~ 3400 5200
+Wire Wire Line
+	3400 5200 3700 5200
 $EndSCHEMATC
