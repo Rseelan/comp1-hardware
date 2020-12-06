@@ -752,7 +752,7 @@ P 2050 5300
 AR Path="/5FC7C198" Ref="R?"  Part="1" 
 AR Path="/5FC40E29/5FC7C198" Ref="R27"  Part="1" 
 F 0 "R27" H 2118 5346 50  0000 L CNN
-F 1 "200K" H 2118 5255 50  0000 L CNN
+F 1 "16K" H 2118 5255 50  0000 L CNN
 F 2 "" V 2090 5290 50  0001 C CNN
 F 3 "~" H 2050 5300 50  0001 C CNN
 	1    2050 5300
@@ -938,9 +938,9 @@ F 3 "" H 5100 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2350 5600 0    50   ~ 0
-2V reference, should trigger OCP arount 10A\nHysteresis from 1.9V to 2.1V
+Should trigger OCP arount 10A\nHysteresis from 1.9V to 2.1V
 Text Notes 2350 4300 0    50   ~ 0
-2.7V reference, should trigger OVP around 30V\nHysteresis from 2.6V to 2.7V
+Should trigger OVP around 30V\nHysteresis from 2.6V to 2.7V
 Text Label 2350 4000 0    50   ~ 0
 V_SENSE
 Text Label 2000 2850 0    50   ~ 0
