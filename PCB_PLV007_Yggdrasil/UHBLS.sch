@@ -489,7 +489,7 @@ P 6950 2750
 AR Path="/5FC5819D" Ref="C?"  Part="1" 
 AR Path="/5FC40E29/5FC5819D" Ref="C20"  Part="1" 
 F 0 "C20" H 7065 2796 50  0000 L CNN
-F 1 "0.1uF" H 7065 2705 50  0000 L CNN
+F 1 "0.47uF" H 7065 2705 50  0000 L CNN
 F 2 "" H 6988 2600 50  0001 C CNN
 F 3 "~" H 6950 2750 50  0001 C CNN
 	1    6950 2750
@@ -560,7 +560,7 @@ P 5450 2350
 AR Path="/5FC581C0" Ref="C?"  Part="1" 
 AR Path="/5FC40E29/5FC581C0" Ref="C19"  Part="1" 
 F 0 "C19" H 5565 2396 50  0000 L CNN
-F 1 "0.1uF" H 5565 2305 50  0000 L CNN
+F 1 "0.47uF" H 5565 2305 50  0000 L CNN
 F 2 "" H 5488 2200 50  0001 C CNN
 F 3 "~" H 5450 2350 50  0001 C CNN
 	1    5450 2350
@@ -1107,4 +1107,6 @@ Wire Wire Line
 Connection ~ 3400 5200
 Wire Wire Line
 	3400 5200 3700 5200
+Text Notes 6350 6550 0    50   ~ 0
+The instrumentation section here has had its functionality verified through simualtion
 $EndSCHEMATC

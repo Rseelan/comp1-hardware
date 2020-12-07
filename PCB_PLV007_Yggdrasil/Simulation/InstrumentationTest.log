@@ -1,0 +1,73 @@
+Circuit: * C:\Users\Jasper Rubin\Desktop\Projects\Paradigm\Boring\git\comp1-hardware\PCB_PLV007_Yggdrasil\Simulation\InstrumentationTest.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+Gmin = 0.000223007
+vernier = 0.25
+vernier = 0.333333
+Gmin = 0.000124738
+vernier = 0.444444
+vernier = 0.222222
+vernier = 0.111111
+Gmin = 7.72167e-005
+vernier = 0.148148
+Gmin = 5.61363e-005
+vernier = 0.197531
+vernier = 0.263374
+Gmin = 3.34785e-005
+vernier = 0.351165
+vernier = 0.46822
+Gmin = 1.49395e-005
+vernier = 0.624294
+Gmin = 4.15946e-006
+vernier = 0.832392
+vernier = 1
+Gmin = 5.92528e-007
+Gmin = 6.36222e-008
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 5.08977e-008
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Sun Dec 06 16:58:19 2020
+Total elapsed time: 1.100 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 56714
+traniter = 54247
+tranpoints = 22398
+accept = 16300
+rejected = 6098
+matrix size = 58
+fillins = 51
+solver = Normal
+Thread vector: 16.4/7.9[6] 5.3/2.6[6] 2.4/1.4[6] 0.2/0.5[1]  2592/500
+Matrix Compiler1: 6.57 KB object code size  1.5/0.7/[0.6]
+Matrix Compiler2: 6.71 KB object code size  0.6/0.9/[0.4]
+
