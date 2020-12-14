@@ -14,19 +14,6 @@ Comment2 "PCB_PLV001"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Interface_UART:MAX3221 U?
-U 1 1 5FB8828C
-P 2850 2500
-AR Path="/5FB8828C" Ref="U?"  Part="1" 
-AR Path="/5FB797DD/5FB8828C" Ref="U8"  Part="1" 
-F 0 "U8" H 2400 3350 50  0000 C CNN
-F 1 "MAX3221" H 2500 1650 50  0000 C CNN
-F 2 "" H 2900 2500 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/max3221.pdf" H 2850 3450 50  0001 C CNN
-	1    2850 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 3000 2250 3000
 Wire Wire Line
@@ -61,19 +48,6 @@ F 3 "" H 2850 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 3450 2850 3400
-$Comp
-L Device:C C?
-U 1 1 5FB882A4
-P 2000 2500
-AR Path="/5FB882A4" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB882A4" Ref="C12"  Part="1" 
-F 0 "C12" H 2115 2546 50  0000 L CNN
-F 1 "0.1uF" H 2115 2455 50  0000 L CNN
-F 2 "" H 2038 2350 50  0001 C CNN
-F 3 "~" H 2000 2500 50  0001 C CNN
-	1    2000 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 2300 2000 2300
 Wire Wire Line
@@ -82,19 +56,6 @@ Wire Wire Line
 	2000 2650 2000 2700
 Wire Wire Line
 	2000 2700 2250 2700
-$Comp
-L Device:C C?
-U 1 1 5FB882AE
-P 2000 2000
-AR Path="/5FB882AE" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB882AE" Ref="C11"  Part="1" 
-F 0 "C11" H 2115 2046 50  0000 L CNN
-F 1 "0.1uF" H 2115 1955 50  0000 L CNN
-F 2 "" H 2038 1850 50  0001 C CNN
-F 3 "~" H 2000 2000 50  0001 C CNN
-	1    2000 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 1800 2000 1800
 Wire Wire Line
@@ -103,34 +64,8 @@ Wire Wire Line
 	2000 2150 2000 2200
 Wire Wire Line
 	2000 2200 2250 2200
-$Comp
-L Device:C C?
-U 1 1 5FB882B8
-P 3650 2200
-AR Path="/5FB882B8" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB882B8" Ref="C15"  Part="1" 
-F 0 "C15" V 3398 2200 50  0000 C CNN
-F 1 "0.1uF" V 3489 2200 50  0000 C CNN
-F 2 "" H 3688 2050 50  0001 C CNN
-F 3 "~" H 3650 2200 50  0001 C CNN
-	1    3650 2200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3450 2200 3500 2200
-$Comp
-L Device:C C?
-U 1 1 5FB882BF
-P 3650 2700
-AR Path="/5FB882BF" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB882BF" Ref="C16"  Part="1" 
-F 0 "C16" V 3398 2700 50  0000 C CNN
-F 1 "0.1uF" V 3489 2700 50  0000 C CNN
-F 2 "" H 3688 2550 50  0001 C CNN
-F 3 "~" H 3650 2700 50  0001 C CNN
-	1    3650 2700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3450 2700 3500 2700
 Wire Wire Line
@@ -153,19 +88,6 @@ F 1 "GND" H 3955 2577 50  0000 C CNN
 F 2 "" H 3950 2750 50  0001 C CNN
 F 3 "" H 3950 2750 50  0001 C CNN
 	1    3950 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FB882D1
-P 4100 2100
-AR Path="/5FB882D1" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB882D1" Ref="C19"  Part="1" 
-F 0 "C19" H 4215 2146 50  0000 L CNN
-F 1 "0.1uF" H 4215 2055 50  0000 L CNN
-F 2 "" H 4138 1950 50  0001 C CNN
-F 3 "~" H 4100 2100 50  0001 C CNN
-	1    4100 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -216,7 +138,7 @@ AR Path="/5FB882EC" Ref="R?"  Part="1"
 AR Path="/5FB797DD/5FB882EC" Ref="R18"  Part="1" 
 F 0 "R18" H 1668 3046 50  0000 L CNN
 F 1 "0" H 1668 2955 50  0000 L CNN
-F 2 "" V 1640 2990 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1640 2990 50  0001 C CNN
 F 3 "~" H 1600 3000 50  0001 C CNN
 	1    1600 3000
 	1    0    0    -1  
@@ -229,7 +151,7 @@ AR Path="/5FB882F2" Ref="R?"  Part="1"
 AR Path="/5FB797DD/5FB882F2" Ref="R22"  Part="1" 
 F 0 "R22" H 4168 3046 50  0000 L CNN
 F 1 "0" H 4168 2955 50  0000 L CNN
-F 2 "" V 4140 2990 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4140 2990 50  0001 C CNN
 F 3 "~" H 4100 3000 50  0001 C CNN
 	1    4100 3000
 	1    0    0    -1  
@@ -280,8 +202,9 @@ AR Path="/5FB8830A" Ref="U?"  Part="1"
 AR Path="/5FB797DD/5FB8830A" Ref="U9"  Part="1" 
 F 0 "U9" H 2400 5700 50  0000 C CNN
 F 1 "MAX3221" H 2500 4000 50  0000 C CNN
-F 2 "" H 2900 4850 50  0001 C CIN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2900 4850 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/max3221.pdf" H 2850 5800 50  0001 C CNN
+F 4 "MAX3221CPWR" H 2850 4850 50  0001 C CNN "MFPN"
 	1    2850 4850
 	1    0    0    -1  
 $EndComp
@@ -319,19 +242,6 @@ F 3 "" H 2850 5800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 5800 2850 5750
-$Comp
-L Device:C C?
-U 1 1 5FB88322
-P 2000 4850
-AR Path="/5FB88322" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB88322" Ref="C14"  Part="1" 
-F 0 "C14" H 2115 4896 50  0000 L CNN
-F 1 "0.1uF" H 2115 4805 50  0000 L CNN
-F 2 "" H 2038 4700 50  0001 C CNN
-F 3 "~" H 2000 4850 50  0001 C CNN
-	1    2000 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 4650 2000 4650
 Wire Wire Line
@@ -340,19 +250,6 @@ Wire Wire Line
 	2000 5000 2000 5050
 Wire Wire Line
 	2000 5050 2250 5050
-$Comp
-L Device:C C?
-U 1 1 5FB8832C
-P 2000 4350
-AR Path="/5FB8832C" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB8832C" Ref="C13"  Part="1" 
-F 0 "C13" H 2115 4396 50  0000 L CNN
-F 1 "0.1uF" H 2115 4305 50  0000 L CNN
-F 2 "" H 2038 4200 50  0001 C CNN
-F 3 "~" H 2000 4350 50  0001 C CNN
-	1    2000 4350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 4150 2000 4150
 Wire Wire Line
@@ -361,34 +258,8 @@ Wire Wire Line
 	2000 4500 2000 4550
 Wire Wire Line
 	2000 4550 2250 4550
-$Comp
-L Device:C C?
-U 1 1 5FB88336
-P 3650 4550
-AR Path="/5FB88336" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB88336" Ref="C17"  Part="1" 
-F 0 "C17" V 3398 4550 50  0000 C CNN
-F 1 "0.1uF" V 3489 4550 50  0000 C CNN
-F 2 "" H 3688 4400 50  0001 C CNN
-F 3 "~" H 3650 4550 50  0001 C CNN
-	1    3650 4550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3450 4550 3500 4550
-$Comp
-L Device:C C?
-U 1 1 5FB8833D
-P 3650 5050
-AR Path="/5FB8833D" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB8833D" Ref="C18"  Part="1" 
-F 0 "C18" V 3398 5050 50  0000 C CNN
-F 1 "0.1uF" V 3489 5050 50  0000 C CNN
-F 2 "" H 3688 4900 50  0001 C CNN
-F 3 "~" H 3650 5050 50  0001 C CNN
-	1    3650 5050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3450 5050 3500 5050
 Wire Wire Line
@@ -411,19 +282,6 @@ F 1 "GND" H 3955 4927 50  0000 C CNN
 F 2 "" H 3950 5100 50  0001 C CNN
 F 3 "" H 3950 5100 50  0001 C CNN
 	1    3950 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FB8834F
-P 4100 4450
-AR Path="/5FB8834F" Ref="C?"  Part="1" 
-AR Path="/5FB797DD/5FB8834F" Ref="C20"  Part="1" 
-F 0 "C20" H 4215 4496 50  0000 L CNN
-F 1 "0.1uF" H 4215 4405 50  0000 L CNN
-F 2 "" H 4138 4300 50  0001 C CNN
-F 3 "~" H 4100 4450 50  0001 C CNN
-	1    4100 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -474,7 +332,7 @@ AR Path="/5FB8836A" Ref="R?"  Part="1"
 AR Path="/5FB797DD/5FB8836A" Ref="R19"  Part="1" 
 F 0 "R19" H 1668 5396 50  0000 L CNN
 F 1 "0" H 1668 5305 50  0000 L CNN
-F 2 "" V 1640 5340 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1640 5340 50  0001 C CNN
 F 3 "~" H 1600 5350 50  0001 C CNN
 	1    1600 5350
 	1    0    0    -1  
@@ -487,7 +345,7 @@ AR Path="/5FB88370" Ref="R?"  Part="1"
 AR Path="/5FB797DD/5FB88370" Ref="R23"  Part="1" 
 F 0 "R23" H 4168 5396 50  0000 L CNN
 F 1 "0" H 4168 5305 50  0000 L CNN
-F 2 "" V 4140 5340 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4140 5340 50  0001 C CNN
 F 3 "~" H 4100 5350 50  0001 C CNN
 	1    4100 5350
 	1    0    0    -1  
@@ -530,19 +388,6 @@ Text Label 3850 5350 2    50   ~ 0
 232_2_RX
 Wire Wire Line
 	3850 5350 3450 5350
-$Comp
-L Device:R_US R?
-U 1 1 5FB88388
-P 2200 3400
-AR Path="/5FB88388" Ref="R?"  Part="1" 
-AR Path="/5FB797DD/5FB88388" Ref="R20"  Part="1" 
-F 0 "R20" H 2050 3400 50  0000 L CNN
-F 1 "47K" H 2268 3355 50  0000 L CNN
-F 2 "" V 2240 3390 50  0001 C CNN
-F 3 "~" H 2200 3400 50  0001 C CNN
-	1    2200 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 3250 2200 3100
 Wire Wire Line
@@ -570,8 +415,9 @@ AR Path="/5FB88397" Ref="R?"  Part="1"
 AR Path="/5FB797DD/5FB88397" Ref="R21"  Part="1" 
 F 0 "R21" H 2050 5750 50  0000 L CNN
 F 1 "47K" H 2268 5705 50  0000 L CNN
-F 2 "" V 2240 5740 50  0001 C CNN
-F 3 "~" H 2200 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2240 5740 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-packaging.pdf" H 2200 5750 50  0001 C CNN
+F 4 "RMCF0603FT47K0" H 2200 5750 50  0001 C CNN "MFPN"
 	1    2200 5750
 	1    0    0    -1  
 $EndComp
@@ -622,8 +468,9 @@ U 1 1 5FBEFFC0
 P 5100 2650
 F 0 "J2" H 5250 2600 50  0000 C CNN
 F 1 "IMU" H 5250 2700 50  0000 C CNN
-F 2 "" H 5100 2650 50  0001 C CNN
-F 3 "~" H 5100 2650 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0500_1x05_P3.00mm_Horizontal" H 5100 2650 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/436500500_sd.pdf" H 5100 2650 50  0001 C CNN
+F 4 "0436500500" H 5100 2650 50  0001 C CNN "MFPN"
 	1    5100 2650
 	1    0    0    1   
 $EndComp
@@ -633,8 +480,9 @@ U 1 1 5FBF0CE2
 P 5100 5000
 F 0 "J3" H 5250 4950 50  0000 C CNN
 F 1 "INS" H 5250 5050 50  0000 C CNN
-F 2 "" H 5100 5000 50  0001 C CNN
-F 3 "~" H 5100 5000 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0500_1x05_P3.00mm_Horizontal" H 5100 5000 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/436500500_sd.pdf" H 5100 5000 50  0001 C CNN
+F 4 "0436500500" H 5100 5000 50  0001 C CNN "MFPN"
 	1    5100 5000
 	1    0    0    1   
 $EndComp
@@ -727,17 +575,6 @@ IMU_TOV
 Wire Wire Line
 	4850 2550 4900 2550
 $Comp
-L Device:CP1 C22
-U 1 1 5FC25E5A
-P 5500 5000
-F 0 "C22" H 5615 5046 50  0000 L CNN
-F 1 "470uF" H 5615 4955 50  0000 L CNN
-F 2 "" H 5500 5000 50  0001 C CNN
-F 3 "~" H 5500 5000 50  0001 C CNN
-	1    5500 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0134
 U 1 1 5FC25E64
 P 5500 4750
@@ -771,8 +608,9 @@ U 1 1 5FC2C02C
 P 5950 5000
 F 0 "R25" H 6018 5046 50  0000 L CNN
 F 1 "100K" H 6018 4955 50  0000 L CNN
-F 2 "" V 5990 4990 50  0001 C CNN
-F 3 "~" H 5950 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5990 4990 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5950 5000 50  0001 C CNN
+F 4 "RMCF0603FG100K" H 5950 5000 50  0001 C CNN "MFPN"
 	1    5950 5000
 	1    0    0    -1  
 $EndComp
@@ -796,8 +634,9 @@ U 1 1 5FC3A791
 P 5500 2650
 F 0 "C21" H 5615 2696 50  0000 L CNN
 F 1 "470uF" H 5615 2605 50  0000 L CNN
-F 2 "" H 5500 2650 50  0001 C CNN
-F 3 "~" H 5500 2650 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5500 2650 50  0001 C CNN
+F 3 "http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/e_wxa.pdf" H 5500 2650 50  0001 C CNN
+F 4 "25WXA470MEFC10X9" H 5500 2650 50  0001 C CNN "MFPN"
 	1    5500 2650
 	1    0    0    -1  
 $EndComp
@@ -829,17 +668,6 @@ F 3 "" H 5500 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 2900 5500 2850
-$Comp
-L Device:R_US R24
-U 1 1 5FC3A7B1
-P 5950 2650
-F 0 "R24" H 6018 2696 50  0000 L CNN
-F 1 "100K" H 6018 2605 50  0000 L CNN
-F 2 "" V 5990 2640 50  0001 C CNN
-F 3 "~" H 5950 2650 50  0001 C CNN
-	1    5950 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 2850 5950 2850
 Wire Wire Line
@@ -854,4 +682,196 @@ Wire Wire Line
 Connection ~ 5500 2450
 Wire Wire Line
 	5500 2450 5500 2500
+$Comp
+L Device:C C?
+U 1 1 5FD1AF07
+P 4100 2100
+AR Path="/5FD1AF07" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD1AF07" Ref="C27"  Part="1" 
+F 0 "C27" H 4215 2146 50  0000 L CNN
+F 1 "0.1uF" H 4215 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4138 1950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4100 2100 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 4100 2100 50  0001 C CNN "MFPN"
+	1    4100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD1D509
+P 2000 2000
+AR Path="/5FD1D509" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD1D509" Ref="C14"  Part="1" 
+F 0 "C14" H 2115 2046 50  0000 L CNN
+F 1 "0.1uF" H 2115 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2038 1850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2000 2000 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 2000 2000 50  0001 C CNN "MFPN"
+	1    2000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD1EC0F
+P 2000 2500
+AR Path="/5FD1EC0F" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD1EC0F" Ref="C15"  Part="1" 
+F 0 "C15" H 2115 2546 50  0000 L CNN
+F 1 "0.1uF" H 2115 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2038 2350 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2000 2500 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 2000 2500 50  0001 C CNN "MFPN"
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD1F31E
+P 2000 4350
+AR Path="/5FD1F31E" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD1F31E" Ref="C16"  Part="1" 
+F 0 "C16" H 2115 4396 50  0000 L CNN
+F 1 "0.1uF" H 2115 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2038 4200 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2000 4350 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 2000 4350 50  0001 C CNN "MFPN"
+	1    2000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD1FEAC
+P 2000 4850
+AR Path="/5FD1FEAC" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD1FEAC" Ref="C17"  Part="1" 
+F 0 "C17" H 2115 4896 50  0000 L CNN
+F 1 "0.1uF" H 2115 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2038 4700 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2000 4850 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 2000 4850 50  0001 C CNN "MFPN"
+	1    2000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD20579
+P 4100 4450
+AR Path="/5FD20579" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD20579" Ref="C28"  Part="1" 
+F 0 "C28" H 4215 4496 50  0000 L CNN
+F 1 "0.1uF" H 4215 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4138 4300 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4100 4450 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 4100 4450 50  0001 C CNN "MFPN"
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD215B2
+P 3650 4550
+AR Path="/5FD215B2" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD215B2" Ref="C20"  Part="1" 
+F 0 "C20" V 3900 4500 50  0000 L CNN
+F 1 "0.1uF" V 3800 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3688 4400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3650 4550 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 3650 4550 50  0001 C CNN "MFPN"
+	1    3650 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD2234D
+P 3650 5050
+AR Path="/5FD2234D" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD2234D" Ref="C22"  Part="1" 
+F 0 "C22" V 3900 5000 50  0000 L CNN
+F 1 "0.1uF" V 3800 4950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3688 4900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3650 5050 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 3650 5050 50  0001 C CNN "MFPN"
+	1    3650 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD22942
+P 3650 2700
+AR Path="/5FD22942" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD22942" Ref="C19"  Part="1" 
+F 0 "C19" V 3900 2650 50  0000 L CNN
+F 1 "0.1uF" V 3800 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3688 2550 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3650 2700 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 3650 2700 50  0001 C CNN "MFPN"
+	1    3650 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD23DA4
+P 3650 2200
+AR Path="/5FD23DA4" Ref="C?"  Part="1" 
+AR Path="/5FB797DD/5FD23DA4" Ref="C18"  Part="1" 
+F 0 "C18" V 3900 2150 50  0000 L CNN
+F 1 "0.1uF" V 3800 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3688 2050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3650 2200 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 3650 2200 50  0001 C CNN "MFPN"
+	1    3650 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C29
+U 1 1 5FD24D3F
+P 5500 5000
+F 0 "C29" H 5615 5046 50  0000 L CNN
+F 1 "470uF" H 5615 4955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5500 5000 50  0001 C CNN
+F 3 "http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/e_wxa.pdf" H 5500 5000 50  0001 C CNN
+F 4 "25WXA470MEFC10X9" H 5500 5000 50  0001 C CNN "MFPN"
+	1    5500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_UART:MAX3221 U?
+U 1 1 5FD2621E
+P 2850 2500
+AR Path="/5FD2621E" Ref="U?"  Part="1" 
+AR Path="/5FB797DD/5FD2621E" Ref="U8"  Part="1" 
+F 0 "U8" H 2400 3350 50  0000 C CNN
+F 1 "MAX3221" H 2500 1650 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2900 2500 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/max3221.pdf" H 2850 3450 50  0001 C CNN
+F 4 "MAX3221CPWR" H 2850 2500 50  0001 C CNN "MFPN"
+	1    2850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R24
+U 1 1 5FD28C54
+P 5950 2650
+F 0 "R24" H 6018 2696 50  0000 L CNN
+F 1 "100K" H 6018 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5990 2640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5950 2650 50  0001 C CNN
+F 4 "RMCF0603FG100K" H 5950 2650 50  0001 C CNN "MFPN"
+	1    5950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FD2BCA5
+P 2200 3400
+AR Path="/5FD2BCA5" Ref="R?"  Part="1" 
+AR Path="/5FB797DD/5FD2BCA5" Ref="R20"  Part="1" 
+F 0 "R20" H 2050 3400 50  0000 L CNN
+F 1 "47K" H 2268 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2240 3390 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-packaging.pdf" H 2200 3400 50  0001 C CNN
+F 4 "RMCF0603FT47K0" H 2200 3400 50  0001 C CNN "MFPN"
+	1    2200 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

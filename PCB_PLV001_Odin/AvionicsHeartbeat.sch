@@ -19,28 +19,16 @@ HEARTBEAT
 Wire Wire Line
 	6900 3100 7250 3100
 $Comp
-L Device:Q_PMOS_GDS Q2
+L Device:Q_PMOS_GSD Q2
 U 1 1 5F9F8BCA
 P 7450 3100
 F 0 "Q2" H 7656 3146 50  0000 L CNN
 F 1 "DMP2123L-7" H 7656 3055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7650 3200 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31440.pdf" H 7450 3100 50  0001 C CNN
-F 4 "DMP2123LDICT-ND" H 7450 3100 50  0001 C CNN "Digikey"
+F 4 "DMP2123L-7" H 7450 3100 50  0001 C CNN "MFPN"
 	1    7450 3100
 	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5FAA8147
-P 7000 1400
-F 0 "C6" H 7115 1446 50  0000 L CNN
-F 1 "0.1uF" H 7115 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 1250 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7000 1400 50  0001 C CNN
-F 4 "311-1341-1-ND" H 7000 1400 50  0001 C CNN "Digikey"
-	1    7000 1400
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
@@ -52,42 +40,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 1250 50  
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6550 1400 50  0001 C CNN
 F 4 "311-1341-1-ND" H 6550 1400 50  0001 C CNN "Digikey"
 	1    6550 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5FAA7839
-P 6100 1400
-F 0 "C4" H 6215 1446 50  0000 L CNN
-F 1 "0.1uF" H 6215 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 1250 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6100 1400 50  0001 C CNN
-F 4 "311-1341-1-ND" H 6100 1400 50  0001 C CNN "Digikey"
-	1    6100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5FAA751A
-P 5650 1400
-F 0 "C3" H 5765 1446 50  0000 L CNN
-F 1 "0.1uF" H 5765 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 1250 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5650 1400 50  0001 C CNN
-F 4 "311-1341-1-ND" H 5650 1400 50  0001 C CNN "Digikey"
-	1    5650 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5FAA71AD
-P 5200 1400
-F 0 "C2" H 5315 1446 50  0000 L CNN
-F 1 "0.1uF" H 5315 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5238 1250 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5200 1400 50  0001 C CNN
-F 4 "311-1341-1-ND" H 5200 1400 50  0001 C CNN "Digikey"
-	1    5200 1400
 	1    0    0    -1  
 $EndComp
 Text Notes 1800 7100 0    50   ~ 0
@@ -113,8 +65,9 @@ U 1 1 5FA80F4A
 P 8850 3850
 F 0 "R17" H 8918 3896 50  0000 L CNN
 F 1 "1K" H 8918 3805 50  0000 L CNN
-F 2 "" V 8890 3840 50  0001 C CNN
-F 3 "~" H 8850 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8890 3840 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 8850 3850 50  0001 C CNN
+F 4 "RMCF0603FT1K00" H 8850 3850 50  0001 C CNN "MFPN"
 	1    8850 3850
 	1    0    0    -1  
 $EndComp
@@ -128,7 +81,7 @@ F 0 "D3" V 8889 3383 50  0000 R CNN
 F 1 "BLUE" V 8798 3383 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8850 3500 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/150080BS75000.pdf" H 8850 3500 50  0001 C CNN
-F 4 "732-4982-1-ND" V 8850 3500 50  0001 C CNN "Digikey"
+F 4 "150080BS75000" V 8850 3500 50  0001 C CNN "MFPN"
 	1    8850 3500
 	0    -1   -1   0   
 $EndComp
@@ -151,8 +104,9 @@ U 1 1 5FA785E3
 P 4250 3800
 F 0 "R16" H 4318 3846 50  0000 L CNN
 F 1 "1K" H 4318 3755 50  0000 L CNN
-F 2 "" V 4290 3790 50  0001 C CNN
-F 3 "~" H 4250 3800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4290 3790 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 4250 3800 50  0001 C CNN
+F 4 "RMCF0603FT1K00" H 4250 3800 50  0001 C CNN "MFPN"
 	1    4250 3800
 	1    0    0    -1  
 $EndComp
@@ -170,7 +124,7 @@ F 0 "D2" V 4289 3332 50  0000 R CNN
 F 1 "GREEN" V 4198 3332 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 3450 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/150080GS75000.pdf" H 4250 3450 50  0001 C CNN
-F 4 "732-4983-1-ND" V 4250 3450 50  0001 C CNN "Digikey"
+F 4 "150080GS75000" V 4250 3450 50  0001 C CNN "MFPN"
 	1    4250 3450
 	0    -1   -1   0   
 $EndComp
@@ -180,17 +134,6 @@ Wire Wire Line
 	2850 3950 2800 3950
 Wire Wire Line
 	2850 3950 2850 4000
-$Comp
-L Device:R_US R15
-U 1 1 5FA50319
-P 2850 4150
-F 0 "R15" H 2918 4196 50  0000 L CNN
-F 1 "47K" H 2918 4105 50  0000 L CNN
-F 2 "" V 2890 4140 50  0001 C CNN
-F 3 "~" H 2850 4150 50  0001 C CNN
-	1    2850 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 4350 2850 4300
 Wire Wire Line
@@ -259,6 +202,7 @@ F 0 "U5" H 4180 1396 50  0000 L CNN
 F 1 "74LVC1G17" H 4180 1305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3950 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1605119972692" H 3950 1350 50  0001 C CNN
+F 4 "SN74LVC1G17QDBVRQ1" H 3950 1350 50  0001 C CNN "MFPN"
 	2    3950 1350
 	1    0    0    -1  
 $EndComp
@@ -300,8 +244,9 @@ U 1 1 5FA53C14
 P 7450 1400
 F 0 "C7" H 7565 1446 50  0000 L CNN
 F 1 "1uF" H 7565 1355 50  0000 L CNN
-F 2 "" H 7488 1250 50  0001 C CNN
-F 3 "~" H 7450 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7488 1250 50  0001 C CNN
+F 3 "https://www.samsungsem.com/kr/support/product-search/mlcc/CL10B105KA8NNNC.jsp" H 7450 1400 50  0001 C CNN
+F 4 "CL10B105KA8NNNC" H 7450 1400 50  0001 C CNN "MFPN"
 	1    7450 1400
 	1    0    0    -1  
 $EndComp
@@ -506,18 +451,6 @@ F 3 "" H 4750 1150 50  0001 C CNN
 	1    4750 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C1
-U 1 1 5FA25AEE
-P 4750 1400
-F 0 "C1" H 4865 1446 50  0000 L CNN
-F 1 "0.1uF" H 4865 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4788 1250 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4750 1400 50  0001 C CNN
-F 4 "311-1341-1-ND" H 4750 1400 50  0001 C CNN "Digikey"
-	1    4750 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3200 800  3200 850 
 $Comp
@@ -528,7 +461,7 @@ F 0 "U4" H 3430 1396 50  0000 L CNN
 F 1 "74HC21" H 3430 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 1350 50  0001 C CNN
-F 4 "296-31574-1-ND" H 3200 1350 50  0001 C CNN "Digikey"
+F 4 "CD74HC21M96" H 3200 1350 50  0001 C CNN "MFPN"
 	3    3200 1350
 	1    0    0    -1  
 $EndComp
@@ -548,7 +481,7 @@ F 0 "Q1" H 7006 3396 50  0000 L CNN
 F 1 "DMG2302UK-7" H 7006 3305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7000 3450 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/DMG2302UK.pdf" H 6800 3350 50  0001 C CNN
-F 4 "DMG2302UK-7DICT-ND" H 6800 3350 50  0001 C CNN "Digikey"
+F 4 "DMG2302UK-7" H 6800 3350 50  0001 C CNN "MFPN"
 	1    6800 3350
 	1    0    0    -1  
 $EndComp
@@ -574,8 +507,9 @@ U 1 1 5F9FA332
 P 6900 2900
 F 0 "R12" H 6968 2946 50  0000 L CNN
 F 1 "47K" H 6968 2855 50  0000 L CNN
-F 2 "" V 6940 2890 50  0001 C CNN
-F 3 "~" H 6900 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6940 2890 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 6900 2900 50  0001 C CNN
+F 4 "RMCF0603FT47K0" H 6900 2900 50  0001 C CNN "MFPN"
 	1    6900 2900
 	1    0    0    -1  
 $EndComp
@@ -593,17 +527,6 @@ $EndComp
 Connection ~ 7550 3750
 Wire Wire Line
 	7550 3700 7550 3750
-$Comp
-L Device:R_US R14
-U 1 1 5F9F1E06
-P 7550 3550
-F 0 "R14" H 7618 3596 50  0000 L CNN
-F 1 "47K" H 7618 3505 50  0000 L CNN
-F 2 "" V 7590 3540 50  0001 C CNN
-F 3 "~" H 7550 3550 50  0001 C CNN
-	1    7550 3550
-	1    0    0    -1  
-$EndComp
 Connection ~ 7550 3350
 Wire Wire Line
 	7550 3300 7550 3350
@@ -630,7 +553,7 @@ F 0 "U6" H 5850 3600 50  0000 L CNN
 F 1 "LTC6993xS6-1" H 6150 3600 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6100 2950 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/69931234fc.pdf" H 6150 3450 50  0001 C CNN
-F 4 "LTC6993CS6-1#TRMPBFCT-ND" H 6100 3350 50  0001 C CNN "Digikey"
+F 4 "LTC6993CS6-1#TRMPBF" H 6100 3350 50  0001 C CNN "MFPN"
 	1    6100 3350
 	1    0    0    -1  
 $EndComp
@@ -675,8 +598,9 @@ U 1 1 5F9D362A
 P 5350 3650
 F 0 "R10" H 5418 3696 50  0000 L CNN
 F 1 "280K" H 5418 3605 50  0000 L CNN
-F 2 "" V 5390 3640 50  0001 C CNN
-F 3 "~" H 5350 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 3640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5350 3650 50  0001 C CNN
+F 4 "RMCF0603FT280K" H 5350 3650 50  0001 C CNN "MFPN"
 	1    5350 3650
 	1    0    0    -1  
 $EndComp
@@ -686,8 +610,9 @@ U 1 1 5F9D28CD
 P 5350 3050
 F 0 "R9" H 5418 3096 50  0000 L CNN
 F 1 "1M" H 5418 3005 50  0000 L CNN
-F 2 "" V 5390 3040 50  0001 C CNN
-F 3 "~" H 5350 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 3040 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5350 3050 50  0001 C CNN
+F 4 "RMCF0603FT1M00" H 5350 3050 50  0001 C CNN "MFPN"
 	1    5350 3050
 	1    0    0    -1  
 $EndComp
@@ -710,8 +635,9 @@ U 1 1 5F9C72E5
 P 5650 3650
 F 0 "R11" H 5718 3696 50  0000 L CNN
 F 1 "604K" H 5718 3605 50  0000 L CNN
-F 2 "" V 5690 3640 50  0001 C CNN
-F 3 "~" H 5650 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5690 3640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5650 3650 50  0001 C CNN
+F 4 "RMCF0603FT604K" H 5650 3650 50  0001 C CNN "MFPN"
 	1    5650 3650
 	1    0    0    -1  
 $EndComp
@@ -776,20 +702,8 @@ F 0 "U3" H 2680 1396 50  0000 L CNN
 F 1 "74HC08" H 2680 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 1450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 2450 1450 50  0001 C CNN
-F 4 "296-14506-1-ND" H 2450 1350 50  0001 C CNN "Digikey"
+F 4 "CD74HC08M96" H 2450 1350 50  0001 C CNN "Digikey"
 	5    2450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC08 U3
-U 2 1 5F98DD9A
-P 5000 3350
-F 0 "U3" H 5000 3675 50  0000 C CNN
-F 1 "74HC08" H 5000 3584 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 3450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 5000 3450 50  0001 C CNN
-F 4 "296-14506-1-ND" H 5000 3350 50  0001 C CNN "Digikey"
-	2    5000 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -800,7 +714,7 @@ F 0 "U3" H 3900 3575 50  0000 C CNN
 F 1 "74HC08" H 3900 3484 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3900 3350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 3900 3350 50  0001 C CNN
-F 4 "296-14506-1-ND" H 3900 3250 50  0001 C CNN "Digikey"
+F 4 "CD74HC08M96" H 3900 3250 50  0001 C CNN "MFPN"
 	1    3900 3250
 	1    0    0    -1  
 $EndComp
@@ -860,18 +774,6 @@ Wire Wire Line
 	3650 5500 3700 5500
 Wire Wire Line
 	3650 4950 3950 4950
-$Comp
-L boringlib:74HC21 U4
-U 1 1 5F9A3A97
-P 4250 5100
-F 0 "U4" H 4250 5475 50  0000 C CNN
-F 1 "74HC21" H 4250 5384 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 5100 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 4250 5100 50  0001 C CNN
-F 4 "296-31574-1-ND" H 4250 5100 50  0001 C CNN "Digikey"
-	1    4250 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 6150 3050 6150
 Wire Wire Line
@@ -980,45 +882,12 @@ Wire Wire Line
 Wire Wire Line
 	1450 5050 1400 5050
 $Comp
-L Device:R_US R8
-U 1 1 5F98767A
-P 1800 6500
-F 0 "R8" H 1868 6546 50  0000 L CNN
-F 1 "DNP" H 1868 6455 50  0000 L CNN
-F 2 "" V 1840 6490 50  0001 C CNN
-F 3 "~" H 1800 6500 50  0001 C CNN
-	1    1800 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R7
-U 1 1 5F986C8C
-P 1800 5950
-F 0 "R7" H 1868 5996 50  0000 L CNN
-F 1 "DNP" H 1868 5905 50  0000 L CNN
-F 2 "" V 1840 5940 50  0001 C CNN
-F 3 "~" H 1800 5950 50  0001 C CNN
-	1    1800 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R6
-U 1 1 5F986154
-P 1800 5400
-F 0 "R6" H 1868 5446 50  0000 L CNN
-F 1 "DNP" H 1868 5355 50  0000 L CNN
-F 2 "" V 1840 5390 50  0001 C CNN
-F 3 "~" H 1800 5400 50  0001 C CNN
-	1    1800 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R5
 U 1 1 5F985A21
 P 1800 4850
 F 0 "R5" H 1868 4896 50  0000 L CNN
 F 1 "DNP" H 1868 4805 50  0000 L CNN
-F 2 "" V 1840 4840 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1840 4840 50  0001 C CNN
 F 3 "~" H 1800 4850 50  0001 C CNN
 	1    1800 4850
 	1    0    0    -1  
@@ -1027,45 +896,12 @@ Connection ~ 1800 6700
 Wire Wire Line
 	1800 6700 3050 6700
 $Comp
-L Device:R_US R4
-U 1 1 5F982A82
-P 1600 6700
-F 0 "R4" V 1805 6700 50  0000 C CNN
-F 1 "DNP" V 1714 6700 50  0000 C CNN
-F 2 "" V 1640 6690 50  0001 C CNN
-F 3 "~" H 1600 6700 50  0001 C CNN
-	1    1600 6700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R3
-U 1 1 5F981E8C
-P 1600 6150
-F 0 "R3" V 1805 6150 50  0000 C CNN
-F 1 "DNP" V 1714 6150 50  0000 C CNN
-F 2 "" V 1640 6140 50  0001 C CNN
-F 3 "~" H 1600 6150 50  0001 C CNN
-	1    1600 6150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R2
-U 1 1 5F9810F5
-P 1600 5600
-F 0 "R2" V 1805 5600 50  0000 C CNN
-F 1 "DNP" V 1714 5600 50  0000 C CNN
-F 2 "" V 1640 5590 50  0001 C CNN
-F 3 "~" H 1600 5600 50  0001 C CNN
-	1    1600 5600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_US R1
 U 1 1 5F97C5F4
 P 1600 5050
 F 0 "R1" V 1805 5050 50  0000 C CNN
 F 1 "DNP" V 1714 5050 50  0000 C CNN
-F 2 "" V 1640 5040 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1640 5040 50  0001 C CNN
 F 3 "~" H 1600 5050 50  0001 C CNN
 	1    1600 5050
 	0    -1   -1   0   
@@ -1080,61 +916,13 @@ Wire Wire Line
 	3000 4850 3050 4850
 $Comp
 L boringlib:74HC266 U2
-U 4 1 5F9789BB
-P 3350 6600
-F 0 "U2" H 3350 6925 50  0000 C CNN
-F 1 "74HC266" H 3350 6834 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6600 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6600 50  0001 C CNN
-F 4 "296-31804-1-ND" H 3350 6600 50  0001 C CNN "Digikey"
-	4    3350 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC266 U2
-U 3 1 5F977881
-P 3350 6050
-F 0 "U2" H 3350 6375 50  0000 C CNN
-F 1 "74HC266" H 3350 6284 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6050 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6050 50  0001 C CNN
-F 4 "296-31804-1-ND" H 3350 6050 50  0001 C CNN "Digikey"
-	3    3350 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC266 U2
-U 2 1 5F975C99
-P 3350 5500
-F 0 "U2" H 3350 5825 50  0000 C CNN
-F 1 "74HC266" H 3350 5734 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 5500 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 5500 50  0001 C CNN
-F 4 "296-31804-1-ND" H 3350 5500 50  0001 C CNN "Digikey"
-	2    3350 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC266 U2
-U 1 1 5F96F963
-P 3350 4950
-F 0 "U2" H 3350 5275 50  0000 C CNN
-F 1 "74HC266" H 3350 5184 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 4950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 4950 50  0001 C CNN
-F 4 "296-31804-1-ND" H 3350 4950 50  0001 C CNN "Digikey"
-	1    3350 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC266 U2
 U 5 1 5F96A885
 P 1650 1350
 F 0 "U2" H 1880 1396 50  0000 L CNN
 F 1 "74HC266" H 1880 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1650 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 1650 1350 50  0001 C CNN
-F 4 "296-31804-1-ND" H 1650 1350 50  0001 C CNN "Digikey"
+F 4 "SN74HC266DR" H 1650 1350 50  0001 C CNN "MFPN"
 	5    1650 1350
 	1    0    0    -1  
 $EndComp
@@ -1177,32 +965,8 @@ F 0 "U1" H 1130 1396 50  0000 L CNN
 F 1 "74HC21" H 1130 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 900 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 900 1350 50  0001 C CNN
-F 4 "296-31574-1-ND" H 900 1350 50  0001 C CNN "Digikey"
+F 4 "CD74HC21M96" H 900 1350 50  0001 C CNN "MFPN"
 	3    900  1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC21 U1
-U 2 1 5F9550C5
-P 3200 3800
-F 0 "U1" H 3200 4175 50  0000 C CNN
-F 1 "74HC21" H 3200 4084 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3800 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3800 50  0001 C CNN
-F 4 "296-31574-1-ND" H 3200 3800 50  0001 C CNN "Digikey"
-	2    3200 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L boringlib:74HC21 U1
-U 1 1 5F953590
-P 3200 3150
-F 0 "U1" H 3200 3525 50  0000 C CNN
-F 1 "74HC21" H 3200 3434 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3150 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3150 50  0001 C CNN
-F 4 "296-31574-1-ND" H 3200 3150 50  0001 C CNN "Digikey"
-	1    3200 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1212,4 +976,258 @@ Wire Wire Line
 Connection ~ 8100 3350
 Wire Wire Line
 	8100 3350 8200 3350
+$Comp
+L Device:C C?
+U 1 1 5FD0DFFB
+P 4750 1400
+AR Path="/5FD0DFFB" Ref="C?"  Part="1" 
+AR Path="/5F94F01A/5FD0DFFB" Ref="C6"  Part="1" 
+F 0 "C6" H 4865 1446 50  0000 L CNN
+F 1 "0.1uF" H 4865 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4788 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4750 1400 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 4750 1400 50  0001 C CNN "MFPN"
+	1    4750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD12D6C
+P 5200 1400
+AR Path="/5FD12D6C" Ref="C?"  Part="1" 
+AR Path="/5F94F01A/5FD12D6C" Ref="C10"  Part="1" 
+F 0 "C10" H 5315 1446 50  0000 L CNN
+F 1 "0.1uF" H 5315 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5238 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5200 1400 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 5200 1400 50  0001 C CNN "MFPN"
+	1    5200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD13193
+P 5650 1400
+AR Path="/5FD13193" Ref="C?"  Part="1" 
+AR Path="/5F94F01A/5FD13193" Ref="C11"  Part="1" 
+F 0 "C11" H 5765 1446 50  0000 L CNN
+F 1 "0.1uF" H 5765 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5650 1400 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 5650 1400 50  0001 C CNN "MFPN"
+	1    5650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD1366E
+P 6100 1400
+AR Path="/5FD1366E" Ref="C?"  Part="1" 
+AR Path="/5F94F01A/5FD1366E" Ref="C12"  Part="1" 
+F 0 "C12" H 6215 1446 50  0000 L CNN
+F 1 "0.1uF" H 6215 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6100 1400 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 6100 1400 50  0001 C CNN "MFPN"
+	1    6100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5FD13BEA
+P 7000 1400
+F 0 "C13" H 7115 1446 50  0000 L CNN
+F 1 "0.1uF" H 7115 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7000 1400 50  0001 C CNN
+F 4 "311-1341-1-ND" H 7000 1400 50  0001 C CNN "Digikey"
+	1    7000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC21 U1
+U 1 1 5FDA8102
+P 3200 3150
+F 0 "U1" H 3100 3500 50  0000 L CNN
+F 1 "74HC21" H 3050 3400 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3150 50  0001 C CNN
+F 4 "CD74HC21M96" H 3200 3150 50  0001 C CNN "MFPN"
+	1    3200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC21 U1
+U 2 1 5FDA8FAD
+P 3200 3800
+F 0 "U1" H 3100 4150 50  0000 L CNN
+F 1 "74HC21" H 3050 4050 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3800 50  0001 C CNN
+F 4 "CD74HC21M96" H 3200 3800 50  0001 C CNN "MFPN"
+	2    3200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC266 U2
+U 1 1 5FDAADC3
+P 3350 4950
+F 0 "U2" H 3250 5250 50  0000 L CNN
+F 1 "74HC266" H 3150 5150 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 4950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 4950 50  0001 C CNN
+F 4 "SN74HC266DR" H 3350 4950 50  0001 C CNN "MFPN"
+	1    3350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC266 U2
+U 2 1 5FDAE468
+P 3350 5500
+F 0 "U2" H 3250 5800 50  0000 L CNN
+F 1 "74HC266" H 3150 5700 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 5500 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 5500 50  0001 C CNN
+F 4 "SN74HC266DR" H 3350 5500 50  0001 C CNN "MFPN"
+	2    3350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC266 U2
+U 3 1 5FDAF989
+P 3350 6050
+F 0 "U2" H 3250 6350 50  0000 L CNN
+F 1 "74HC266" H 3150 6250 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6050 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6050 50  0001 C CNN
+F 4 "SN74HC266DR" H 3350 6050 50  0001 C CNN "MFPN"
+	3    3350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC266 U2
+U 4 1 5FDB0472
+P 3350 6600
+F 0 "U2" H 3250 6900 50  0000 L CNN
+F 1 "74HC266" H 3150 6800 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6600 50  0001 C CNN
+F 4 "SN74HC266DR" H 3350 6600 50  0001 C CNN "MFPN"
+	4    3350 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC08 U3
+U 2 1 5FDBAFCE
+P 5000 3350
+F 0 "U3" H 5000 3675 50  0000 C CNN
+F 1 "74HC08" H 5000 3584 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 3450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 5000 3450 50  0001 C CNN
+F 4 "CD74HC08M96" H 5000 3350 50  0001 C CNN "MFPN"
+	2    5000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L boringlib:74HC21 U4
+U 1 1 5FDBDFCF
+P 4250 5100
+F 0 "U4" H 4150 5450 50  0000 L CNN
+F 1 "74HC21" H 4100 5350 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 5100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 4250 5100 50  0001 C CNN
+F 4 "CD74HC21M96" H 4250 5100 50  0001 C CNN "MFPN"
+	1    4250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 5FDC5054
+P 1800 5400
+F 0 "R6" H 1868 5446 50  0000 L CNN
+F 1 "DNP" H 1868 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1840 5390 50  0001 C CNN
+F 3 "~" H 1800 5400 50  0001 C CNN
+	1    1800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5FDC55E8
+P 1800 5950
+F 0 "R7" H 1868 5996 50  0000 L CNN
+F 1 "DNP" H 1868 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1840 5940 50  0001 C CNN
+F 3 "~" H 1800 5950 50  0001 C CNN
+	1    1800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 5FDC5BAC
+P 1800 6500
+F 0 "R8" H 1868 6546 50  0000 L CNN
+F 1 "DNP" H 1868 6455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1840 6490 50  0001 C CNN
+F 3 "~" H 1800 6500 50  0001 C CNN
+	1    1800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FDC63CF
+P 1600 5600
+F 0 "R2" V 1805 5600 50  0000 C CNN
+F 1 "DNP" V 1714 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1640 5590 50  0001 C CNN
+F 3 "~" H 1600 5600 50  0001 C CNN
+	1    1600 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FDC67DD
+P 1600 6150
+F 0 "R3" V 1805 6150 50  0000 C CNN
+F 1 "DNP" V 1714 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1640 6140 50  0001 C CNN
+F 3 "~" H 1600 6150 50  0001 C CNN
+	1    1600 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5FDC6DA1
+P 1600 6700
+F 0 "R4" V 1805 6700 50  0000 C CNN
+F 1 "DNP" V 1714 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1640 6690 50  0001 C CNN
+F 3 "~" H 1600 6700 50  0001 C CNN
+	1    1600 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R15
+U 1 1 5FDD3A00
+P 7550 3550
+F 0 "R15" H 7618 3596 50  0000 L CNN
+F 1 "47K" H 7618 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7590 3540 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7550 3550 50  0001 C CNN
+F 4 "RMCF0603FT47K0" H 7550 3550 50  0001 C CNN "MFPN"
+	1    7550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R14
+U 1 1 5FDD4907
+P 2850 4150
+F 0 "R14" H 2918 4196 50  0000 L CNN
+F 1 "47K" H 2918 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2890 4140 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 2850 4150 50  0001 C CNN
+F 4 "RMCF0603FT47K0" H 2850 4150 50  0001 C CNN "MFPN"
+	1    2850 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
