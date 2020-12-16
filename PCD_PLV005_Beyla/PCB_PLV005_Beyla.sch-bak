@@ -39,17 +39,6 @@ F 3 "" H 7100 3450 50  0001 C CNN
 	1    7100 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x08_Female J1
-U 1 1 5FB80BE7
-P 7300 4250
-F 0 "J1" H 7328 4226 50  0000 L CNN
-F 1 "PWR/QB" H 7328 4135 50  0000 L CNN
-F 2 "" H 7300 4250 50  0001 C CNN
-F 3 "~" H 7300 4250 50  0001 C CNN
-	1    7300 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7100 3950 6900 3950
 Wire Wire Line
@@ -70,17 +59,6 @@ Wire Wire Line
 	6000 4150 7100 4150
 Wire Wire Line
 	6250 4550 6250 4600
-$Comp
-L Connector:Conn_01x04_Female J2
-U 1 1 5FB96598
-P 2450 4350
-F 0 "J2" H 2342 3925 50  0000 C CNN
-F 1 "Switch_In" H 2342 4016 50  0000 C CNN
-F 2 "" H 2450 4350 50  0001 C CNN
-F 3 "~" H 2450 4350 50  0001 C CNN
-	1    2450 4350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4100 4150 2800 4150
 Wire Wire Line
@@ -90,25 +68,16 @@ Wire Wire Line
 Connection ~ 2800 4150
 Wire Wire Line
 	2800 4150 2650 4150
-Wire Wire Line
-	2650 4450 2800 4450
-Wire Wire Line
-	2800 4350 2650 4350
-Wire Wire Line
-	2800 4350 2800 4450
-Connection ~ 2800 4450
-Wire Wire Line
-	2800 4450 2800 4600
 $Comp
 L power:GND #PWR0102
 U 1 1 5FB9ACDA
-P 2800 4600
-F 0 "#PWR0102" H 2800 4350 50  0001 C CNN
-F 1 "GND" H 2805 4427 50  0000 C CNN
-F 2 "" H 2800 4600 50  0001 C CNN
-F 3 "" H 2800 4600 50  0001 C CNN
-	1    2800 4600
-	1    0    0    -1  
+P 2800 3600
+F 0 "#PWR0102" H 2800 3350 50  0001 C CNN
+F 1 "GND" H 2805 3427 50  0000 C CNN
+F 2 "" H 2800 3600 50  0001 C CNN
+F 3 "" H 2800 3600 50  0001 C CNN
+	1    2800 3600
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6900 3350 6900 3600
@@ -119,23 +88,23 @@ Wire Wire Line
 Wire Wire Line
 	6250 3000 5800 3000
 $Comp
-L Device:C C1
+L Device:C C8
 U 1 1 5FBF38DA
 P 5800 3300
-F 0 "C1" H 5915 3346 50  0000 L CNN
+F 0 "C8" H 5915 3346 50  0000 L CNN
 F 1 "1uF" H 5915 3255 50  0000 L CNN
-F 2 "" H 5838 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5838 3150 50  0001 C CNN
 F 3 "~" H 5800 3300 50  0001 C CNN
 	1    5800 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C9
 U 1 1 5FBF4C36
 P 4550 3300
-F 0 "C2" H 4665 3346 50  0000 L CNN
+F 0 "C9" H 4665 3346 50  0000 L CNN
 F 1 "10uF" H 4665 3255 50  0000 L CNN
-F 2 "" H 4588 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4588 3150 50  0001 C CNN
 F 3 "~" H 4550 3300 50  0001 C CNN
 	1    4550 3300
 	1    0    0    -1  
@@ -167,14 +136,14 @@ Wire Wire Line
 	4550 3600 5200 3600
 Connection ~ 5200 3600
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 5FBFDEDC
-P 4550 3000
-F 0 "#PWR?" H 4550 2850 50  0001 C CNN
-F 1 "+5V" H 4565 3173 50  0000 C CNN
-F 2 "" H 4550 3000 50  0001 C CNN
-F 3 "" H 4550 3000 50  0001 C CNN
-	1    4550 3000
+P 4550 2950
+F 0 "#PWR0103" H 4550 2800 50  0001 C CNN
+F 1 "+5V" H 4565 3123 50  0000 C CNN
+F 2 "" H 4550 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0001 C CNN
+	1    4550 2950
 	1    0    0    -1  
 $EndComp
 Connection ~ 4550 3000
@@ -184,7 +153,7 @@ U 1 1 5FBFEF04
 P 4050 3000
 F 0 "D1" H 4043 3217 50  0000 C CNN
 F 1 "RED" H 4043 3126 50  0000 C CNN
-F 2 "" H 4050 3000 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 3000 50  0001 C CNN
 F 3 "~" H 4050 3000 50  0001 C CNN
 	1    4050 3000
 	1    0    0    -1  
@@ -195,7 +164,7 @@ U 1 1 5FC06267
 P 3550 3300
 F 0 "R18" H 3618 3346 50  0000 L CNN
 F 1 "1k" H 3618 3255 50  0000 L CNN
-F 2 "" V 3590 3290 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3590 3290 50  0001 C CNN
 F 3 "~" H 3550 3300 50  0001 C CNN
 	1    3550 3300
 	1    0    0    -1  
@@ -211,15 +180,75 @@ Wire Wire Line
 Connection ~ 4550 3600
 Wire Wire Line
 	4200 3000 4550 3000
+NoConn ~ 7100 4650
+Wire Wire Line
+	4550 2950 4550 3000
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5FC2996A
+P 7300 4250
+F 0 "J1" H 7380 4242 50  0000 L CNN
+F 1 "PWR/QB" H 7380 4151 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal" H 7300 4250 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/ps/PS-43045.pdf" H 7300 4250 50  0001 C CNN
+	1    7300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5FC2E912
+P 2450 4350
+F 0 "J2" H 2368 3925 50  0000 C CNN
+F 1 "Switch_In" H 2368 4016 50  0000 C CNN
+F 2 "BoringFootprints:Molex_Ultra-Fit_172316-1204_2x02 Vertical" H 2450 4350 50  0001 C CNN
+F 3 "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1008.pdf" H 2450 4350 50  0001 C CNN
+	1    2450 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R19
+U 1 1 5FC33E92
+P 2800 3850
+F 0 "R19" H 2868 3896 50  0000 L CNN
+F 1 "10k" H 2868 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2840 3840 50  0001 C CNN
+F 3 "~" H 2800 3850 50  0001 C CNN
+	1    2800 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2800 3600 2800 3700
+Wire Wire Line
+	2650 4350 2800 4350
 $Comp
 L boringlib:Recom_R-78c-1.0 VR1
-U 1 1 5FC17AF0
+U 1 1 5FC3D4E7
 P 5200 3000
 F 0 "VR1" H 5200 3315 50  0000 C CNN
 F 1 "Recom_R-78c-1.0" H 5200 3224 50  0000 C CNN
-F 2 "" H 5400 2700 50  0001 C CNN
-F 3 "https://d311uvhi8lkjbj.cloudfront.net/media/Datasheet/pdf/.f91HWzyW/.t321978fcd1ad139cbfa2/Datasheet-260/R-78C-1_0.pdf" H 5400 2700 50  0001 C CNN
+F 2 "BoringFootprints:Recom_R-78C-1.0" H 5400 2700 50  0001 C CNN
+F 3 "" H 5400 2700 50  0001 C CNN
 	1    5200 3000
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5FDAF5EF
+P 2800 4500
+F 0 "#PWR0104" H 2800 4350 50  0001 C CNN
+F 1 "+5V" H 2815 4673 50  0000 C CNN
+F 2 "" H 2800 4500 50  0001 C CNN
+F 3 "" H 2800 4500 50  0001 C CNN
+	1    2800 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2650 4450 2800 4450
+Wire Wire Line
+	2800 4450 2800 4350
+Wire Wire Line
+	2800 4450 2800 4500
+Connection ~ 2800 4450
+Wire Wire Line
+	2800 4000 2800 4150
 $EndSCHEMATC
